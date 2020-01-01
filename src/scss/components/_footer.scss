@@ -1,0 +1,38 @@
+.footer {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  color: #fff;
+  background-color: $primary;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 170px;
+  height: 45px;
+  margin-right: auto;
+}
+
+.footer-contacts {
+  text-align: right;
+}
+
+.footer-contacts__phone {
+  font-size: 24px;
+}
+
+.footer-contacts__mail {
+  font-size: 18px;
+}
+
+.footer-contacts__link {
+  color: inherit;
+  transition: color .3s;
+
+  &:hover {
+    color: #e2e2e2;
+  }
+}
