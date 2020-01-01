@@ -68,26 +68,25 @@ strong, b {
 }
 
 .check-list__item {
-  padding-left: 28px;
+  padding-left: 33px;
   position: relative;
   font-weight: 300;
   line-height: 1.2;
-  font-size: 21px;
-  background-color: #ebebeb;
+  font-size: 24px;
 
   &::before {
-    width: 18px;
-    height: 14px;
-    top: 6px;
-    left: 2px;
-    background: url(../img/icons/check.svg) no-repeat center;
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    left: 4px;
+    background: url(../img/check.svg) no-repeat center;
     background-size: contain;
     position: absolute;
     content: '';
   }
 
   &:not(:last-child) {
-    margin-bottom: 14px;
+    margin-bottom: 30px;
   }
 }
 
