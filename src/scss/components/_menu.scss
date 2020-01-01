@@ -1,3 +1,60 @@
+.menu {
+  padding-left: 45px;
+  padding-right: 37px;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.menu-item {
+}
+
+.menu-link {
+  color: #6e6e6e;
+  font-size: 13px;
+  text-transform: uppercase;
+  position: relative;
+  display: block;
+  transition: color .3s;
+
+  &::before {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    overflow: hidden;
+    padding: 8px 0;
+    max-width: 0;
+    content: attr(data-hover);
+    z-index: 0;
+    transition: max-width 0.5s;
+  }
+
+  &::before {
+    border-top: 1px solid $primary;
+    border-bottom: 1px solid $primary;
+  }
+
+  &:not(.active):hover {
+    color: $primary;
+
+    &::before {
+      max-width: 100%;
+    }
+  }
+
+  &.active {
+    color: $primary;
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/*
+
+
 .nav-menu .logo {
   overflow: hidden;
 }
@@ -36,7 +93,7 @@
   }
 }
 
-/*
+!*
 .menu-calc {
   display: inline-flex;
   align-items: center;
@@ -51,7 +108,7 @@
   height: 23px;
   margin-right: 9px;
 }
-*/
+*!
 
 .menu-link.active {
   color: $red;
@@ -135,9 +192,9 @@
     flex-grow: 1;
     justify-content: space-between;
   }
-/*  .menu-calc__icon {
+!*  .menu-calc__icon {
     fill: $body-color;
-  }*/
+  }*!
 }
 
 @media (min-width: 1200px) {
@@ -231,3 +288,4 @@
     padding-bottom: 4px;
   }
 }
+*/
