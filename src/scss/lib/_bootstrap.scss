@@ -8,7 +8,7 @@
 @import "bootstrap-4.4.1/mixins/grid-framework";
 @import "bootstrap-4.4.1/mixins/grid";
 @import "bootstrap-4.4.1/reboot";
-//@import "bootstrap-4.4.1/utilities";
+@import "bootstrap-4.4.1/transitions";
 @import "bootstrap-4.4.1/utilities/screenreaders";
 @import "bootstrap-4.4.1/utilities/embed";
 
@@ -60,8 +60,4 @@
 .list-unstyled {
   margin-bottom: 0;
   @include list-unstyled();
-}
-
-.tab-content {
-  padding-top: 25px;
 }

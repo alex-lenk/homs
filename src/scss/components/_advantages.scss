@@ -1,0 +1,148 @@
+.advantages {
+  margin-bottom: 200px;
+}
+
+.accordion {
+  margin-bottom: 43px;
+}
+
+.accordion-list {
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.accordion-item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  &:not(.collapsed) {
+    pointer-events: none;
+
+    &::before {
+      width: 85px;
+      background-color: $primary;
+    }
+
+    .accordion-item__point {
+      color: #fff;
+      background-color: $primary;
+    }
+  }
+
+  &.collapsed {
+    cursor: pointer;
+
+    .accordion-item__point {
+      color: #cecece;
+      background-color: #fff;
+    }
+
+    &:hover .accordion-item__point {
+      color: $primary;
+    }
+  }
+
+  &::before {
+    width: 55px;
+    height: 2px;
+    top: 24px;
+    left: -102px;
+    position: absolute;
+    background-color: #cecece;
+    content: '';
+    transition: width .5s, background-color .5s;
+  }
+}
+
+.accordion-item__point {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-align: center;
+  transition: color .3s, background-color .3s;
+}
+
+.accordion-content__body {
+  padding: 12px 0 0;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.accordion-content__title {
+  margin-bottom: 22px;
+}
+
+.advantages-calculation__title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.calculation-list {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.calculation-list__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+
+  &:nth-child(even) {
+    background-color: #efeeee;
+  }
+}
+
+.calculation-list__label {
+  line-height: 1.2;
+}
+
+.calculation-list__option {
+  text-align: right;
+}
+
+.calculation-total {
+  padding-top: 15px;
+  font-size: 24px;
+  border-top: 1px solid #cecece;
+}
+
+.calculation-total__cost {
+  padding-right: 15px;
+  text-align: right;
+}
+
+.calculation-compare {
+  width: 93%;
+  min-height: 510px;
+  margin-left: auto;
+  line-height: 1;
+  color: #fff;
+  background-color: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.calculation-compare__text {
+  margin-bottom: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.calculation-compare__total {
+  font-size: 60px;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: flex-end;
+
+  .calculation-compare__text {
+    margin-left: 10px;
+  }
+}
