@@ -125,9 +125,16 @@
   line-height: 1;
   color: #fff;
   background-color: $primary;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+
+  .spin {
+    height: 148px;
+    top: 0;
+    left: 43%;
+  }
 }
 
 .calculation-compare__text {

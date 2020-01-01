@@ -1,0 +1,58 @@
+.compare {
+  margin-bottom: 190px;
+}
+
+.compare-title {
+  margin-bottom: 68px;
+}
+
+.compare-table {
+  padding-left: 0;
+  list-style: none;
+}
+
+.compare-head,
+.compare-row {
+  padding-left: 0;
+  font-size: 22px;
+  line-height: 1.2;
+  display: flex;
+}
+
+.compare-head .compare-cell {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+.compare-row {
+  &:nth-child(odd) .compare-cell {
+    background-color: #f4f4f4;
+  }
+
+  &:nth-child(even) {
+    background-color: #e8e8e8;
+  }
+}
+
+.compare-label {
+  padding: 7px 15px;
+  flex-basis: 43%;
+  max-width: 43%;
+}
+
+.compare-cell {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-left: 6px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  max-width: 18%;
+  flex-basis: 18%;
+
+  &:nth-of-type(3) {
+    max-width: 21%;
+    flex-basis: 21%;
+  }
+}

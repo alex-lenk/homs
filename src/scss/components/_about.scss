@@ -12,17 +12,15 @@
   color: #fff;
   background-color: $primary;
 
-  &::after {
-    width: 2px;
+  .spin {
     height: 207px;
     margin-bottom: -50px;
     bottom: 100%;
     left: 198px;
-    position: absolute;
-    overflow: hidden;
-    background-color: #fff;
-    animation: spin 1.5s 1000 linear;
-    content: '';
+
+    &::after {
+      bottom: 0;
+    }
   }
 }
 

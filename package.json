@@ -1,7 +1,7 @@
 {
-	"name": "key-g",
-	"version": "4.0.0",
-	"description": "Test site for key-g.com",
+	"name": "homs",
+	"version": "1.0",
+	"description": "The site homs",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
