@@ -25,10 +25,12 @@ var isMobile = {
 
 
 $(document).ready(function () {
+    console.log($('.header-video__frame').attr('data-src'));
+
     $('.header-video__play').click(function () {
 
         var $video = $('.header-video__frame'),
-            src = $video.attr('src');
+            src = $video.attr('data-src');
 
         $video.attr('src', src + '&autoplay=1');
 
@@ -36,10 +38,10 @@ $(document).ready(function () {
     });
 
 
+    $('.header-panel').stickUp();
 
 /*
     var menuToggle = '.menu-toggle';
-    $('.nav-menu').stickUp();
     $('.logo').clone().prependTo('.nav-menu__inner').removeClass('header-logo');
     $(menuToggle).clone().appendTo('.nav-menu__inner');
 */

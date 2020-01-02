@@ -1,5 +1,7 @@
 .header {
-  height: 920px;
+  padding-top: 46px;
+  height: 85.3vh;
+  min-height: 920px;
   position: relative;
   background-color: #e0e0e0;
   overflow: hidden;
@@ -19,13 +21,13 @@
 }
 
 .header-panel {
+  padding-top: 8px;
+  padding-bottom: 8px;
   line-height: 1;
   position: relative;
 }
 
 .header-panel__inner {
-  margin-bottom: 73px;
-  padding-top: 54px;
   position: relative;
   display: flex;
   align-items: center;
@@ -52,8 +54,8 @@
 }
 
 .header-info {
+  padding-top: 65px;
   height: 100%;
-  position: relative;
 }
 
 .header-info__content {
@@ -74,11 +76,10 @@
 }
 
 .header-info__media {
-  //width: 93%;
   width: 62vw;
-  height: 100%;
-  top: 0;
-  left: 31%;
+  height: 48vw;
+  top: 18vh;
+  right: 0;
   position: absolute;
   background: url(../img/bg-media.png) no-repeat top center;
   background-size: contain;
