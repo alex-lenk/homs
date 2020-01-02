@@ -10,12 +10,3 @@
 @import "components/use-cases";
 @import "components/faq";
 @import "components/footer";
-
-.is-stuck {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #e0e0e0;
-  z-index: 10;
-}

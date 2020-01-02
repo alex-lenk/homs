@@ -1,46 +1,47 @@
 @@include('./includes/header.html')
 
 <header class="header" id="home">
-    <nav class="header-panel">
+    <div class="header-panel">
         <div class="header-panel__inner container">
-            <div class="header-logo logo">
+            <div class="header-logo">
                 <a href="#home" class="header-logo__link"><img src="img/logo.svg" alt="Homs"></a>
             </div>
 
-            <ul class="menu list-unstyled" id="navbar">
-                <li class="menu-item nav-item">
-                    <a href="#home" class="menu-link nav-link active" data-hover="О&nbsp;HOMS">О HOMS</a>
-                </li>
-                <li class="menu-item nav-item">
-                    <a href="#advantages" class="menu-link nav-link" data-hover="В&nbsp;чем&nbsp;польза?">В чем польза?</a>
-                </li>
-                <li class="menu-item nav-item">
-                    <a href="#compare" class="menu-link nav-link" data-hover="варианты&nbsp;внедрения">варианты внедрения</a>
-                </li>
-                <li class="menu-item nav-item">
-                    <a href="#use-cases" class="menu-link nav-link" data-hover="сценарии&nbsp;использования">сценарии использования</a>
-                </li>
-                <li class="menu-item nav-item">
-                    <a href="#faq" class="menu-link nav-link" data-hover="FAQ">FAQ</a>
-                </li>
-                <li class="menu-item nav-item">
-                    <a href="#contacts" class="menu-link nav-link" data-hover="Контакты">Контакты</a>
-                </li>
-            </ul>
+            <nav class="menu-panel">
+                <ul class="menu list-unstyled" id="navbar">
+                    <li class="menu-item nav-item">
+                        <a href="#home" class="menu-link nav-link active" data-hover="О&nbsp;HOMS">О HOMS</a>
+                    </li>
+                    <li class="menu-item nav-item">
+                        <a href="#advantages" class="menu-link nav-link" data-hover="В&nbsp;чем&nbsp;польза?">В чем польза?</a>
+                    </li>
+                    <li class="menu-item nav-item d-md-none">
+                        <a href="#compare" class="menu-link nav-link" data-hover="варианты&nbsp;внедрения">варианты внедрения</a>
+                    </li>
+                    <li class="menu-item nav-item">
+                        <a href="#use-cases" class="menu-link nav-link" data-hover="сценарии&nbsp;использования">сценарии <span class="d-md-none">использования</span></a>
+                    </li>
+                    <li class="menu-item nav-item">
+                        <a href="#faq" class="menu-link nav-link" data-hover="FAQ">FAQ</a>
+                    </li>
+                    <li class="menu-item nav-item">
+                        <a href="#contacts" class="menu-link nav-link" data-hover="Контакты">Контакты</a>
+                    </li>
+                </ul>
+                <span class="menu-close"></span>
+            </nav>
 
             <a href="tel:+79158280033" rel="nofollow" class="header-phone">+7 (915) 828-00-33</a>
 
-            <button type="button" class="menu-toggle"></button>
+            <button type="button" class="menu-toggle">меню</button>
         </div>
-    </nav>
+    </div>
 
     <div class="header-info container">
         <div class="header-info__content">
             <h1 class="header-info__title">homs</h1>
             <p class="header-info__text">
-                Программа, позволяющая
-                автоматизировать управленческий
-                учет в гостинице
+                Программа, позволяющая автоматизировать управленческий учет в гостинице
             </p>
         </div>
         <div class="header-info__media">

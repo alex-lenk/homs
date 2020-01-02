@@ -1,7 +1,7 @@
 'use strict';
 
 /* BEGIN mobile device definition  */
-var isMobile = {
+/*var isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
     },
@@ -20,13 +20,18 @@ var isMobile = {
     any: function () {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
-};
-/* END mobile device definition  */
+};*/
+/* END */
 
 
 $(document).ready(function () {
-    console.log($('.header-video__frame').attr('data-src'));
+    /* BEGIN Initial stick header-panel  */
+    $('.header-panel').stickUp();
+    /* END */
 
+
+
+    /* BEGIN play video on desktop  */
     $('.header-video__play').click(function () {
 
         var $video = $('.header-video__frame'),
@@ -36,22 +41,16 @@ $(document).ready(function () {
 
         $('.header-video').addClass('header-video__open');
     });
+    /* END */
 
 
-    $('.header-panel').stickUp();
-
-/*
-    var menuToggle = '.menu-toggle';
-    $('.logo').clone().prependTo('.nav-menu__inner').removeClass('header-logo');
-    $(menuToggle).clone().appendTo('.nav-menu__inner');
-*/
 
     /* BEGIN Actions on opening menus on mobile devices  */
 
-/*    $(menuToggle).click(function () {
+    $('.menu-toggle, .menu-close, .menu-link').click(function () {
         $('html').toggleClass('menu-opened');
-    });*/
-    /* END Actions on opening menus on mobile devices  */
+    });
+    /* END */
 
 
 
@@ -71,12 +70,15 @@ $(document).ready(function () {
         }, 400);
         return false;
     });
-    /* END Script scroll to top  */
+    /* END */
 
 
+
+    /* BEGIN Smooth scrolling to anchors */
     $('body').on('click', '[href*="#"]', function (e) {
         var fixed_offset = 0;
         $('html, body').stop().animate({scrollTop: $(this.hash).offset().top - fixed_offset}, 900);
         e.preventDefault();
     });
+    /* END */
 });
