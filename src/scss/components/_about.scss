@@ -1,22 +1,11 @@
-.about {
-  margin-bottom: 60px;
-}
-
 .about-title {
-  max-width: 845px;
-  margin-top: -20vh;
-  margin-bottom: 93px;
-  padding: 93px 130px 93px 95px;
   line-height: 1;
   position: relative;
   color: #fff;
   background-color: $primary;
 
   .spin {
-    height: 207px;
-    margin-bottom: -50px;
     bottom: 100%;
-    left: 198px;
 
     &::after {
       bottom: 0;
@@ -25,15 +14,8 @@
 }
 
 .about-text {
-  margin-bottom: 95px;
-  font-size: 24px;
   line-height: 1.2;
   text-align: justify;
-}
-
-.about-advantages-title {
-  max-width: 65%;
-  margin-bottom: 74px;
 }
 
 .about-advantages {
@@ -43,7 +25,6 @@
 }
 
 .about-advantages-item {
-  margin-bottom: 15px;
   display: flex;
   align-items: center;
 }
@@ -61,6 +42,67 @@
 }
 
 .about-advantages-text {
-  font-size: 24px;
   flex-shrink: 1;
+}
+
+@media (min-width: 768px) {
+  .about-title {
+    padding: 93px 130px 93px 95px;
+  }
+  .about-text {
+    margin-bottom: 95px;
+  }
+  .about-advantages-item {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    margin-bottom: 40px;
+  }
+
+  .about-title {
+    max-width: 845px;
+    margin-top: -20vh;
+    margin-bottom: 93px;
+
+    .spin {
+      height: 207px;
+      left: 198px;
+      margin-bottom: -50px;
+    }
+  }
+  .about-advantages-title {
+    max-width: 65%;
+    margin-bottom: 74px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about-title {
+    margin-bottom: 75px;
+
+    .spin {
+      height: 70px;
+      left: 50%;
+      margin-bottom: -45px;
+    }
+  }
+  .about-advantages-title {
+    margin-bottom: 70px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-title {
+    padding: 68px 95px 82px 70px;
+  }
+  .about-text {
+    margin-bottom: 85px;
+  }
+  .about-advantages-item:not(:last-child) {
+    margin-bottom: 35px;
+  }
 }

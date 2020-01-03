@@ -64,6 +64,7 @@
     right: -5px;
     top: 16px;
   }
+
   &::after {
     width: 2px;
     height: 42px;
@@ -77,8 +78,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #e0e0e0;
+  background-color: #fff;
   z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 
