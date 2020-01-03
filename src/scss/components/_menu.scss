@@ -10,7 +10,6 @@
   padding: 0 0 3px 47px;
   border: 0;
   position: relative;
-  font-size: 30px;
   background-color: transparent;
 
   &:focus {
@@ -29,12 +28,12 @@
 
   &::before {
     width: 30px;
-    top: 11px;
+    top: 6px;
   }
 
   &::after {
     width: 20px;
-    top: 21px;
+    top: 11px;
   }
 }
 

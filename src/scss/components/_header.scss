@@ -37,7 +37,6 @@
 }
 
 .header-info {
-  position: relative;
   z-index: 1;
 }
 
@@ -167,6 +166,8 @@
 @media (max-width: 1199px) {
   .header-info__content {
     text-align: center;
+    position: relative;
+    z-index: 1;
   }
   .header-info__text {
     font-size: 40px;
@@ -200,9 +201,6 @@
       background-size: 80%;
       background-position-y: 60px;
     }
-  }
-  .header-panel {
-    padding-top: 4px;
   }
   .header-logo__link {
     width: 32vw;
