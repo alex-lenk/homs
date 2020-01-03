@@ -1,8 +1,7 @@
 .footer {
-  padding-top: 76px;
-  padding-bottom: 76px;
   color: #fff;
   background-color: $primary;
+  line-height: 1;
 }
 
 .footer-inner {
@@ -11,9 +10,11 @@
 }
 
 .footer-logo {
-  width: 170px;
-  height: 45px;
   margin-right: auto;
+  flex-shrink: 0;
+  img {
+    display: block;
+  }
 }
 
 .footer-contacts {
@@ -30,5 +31,32 @@
 
   &:hover {
     color: #e2e2e2;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+  .footer-logo {
+    width: 170px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 12vh;
+    padding-bottom: 12vh;
+  }
+  .footer-logo {
+    width: 32vw;
+  }
+  .footer-contacts__phone {
+    font-size: 5vw;
+  }
+  footer-logo
+  .footer-contacts__mail {
+    font-size: 4vw;
   }
 }

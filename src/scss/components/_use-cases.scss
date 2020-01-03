@@ -1,6 +1,5 @@
 .use-cases {
   padding-top: 100px;
-  margin-bottom: 100px;
 }
 
 .use-cases-title {
@@ -8,13 +7,10 @@
 }
 
 .use-cases-column {
-  height: 100%;
-  padding: 42px 45px 45px 60px;
   background-color: #f2f2f2;
 }
 
 .use-cases-column__title {
-  margin-bottom: 48px;
   display: flex;
   align-items: center;
 }
@@ -24,4 +20,26 @@
   height: 44px;
   margin-right: 20px;
   fill: $primary;
+}
+
+@media (min-width: 768px) {
+  .use-cases {
+    margin-bottom: 100px;
+  }
+  .use-cases-column {
+    height: 100%;
+    padding: 42px 45px 45px 60px;
+  }
+  .use-cases-column__title {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .use-cases-column {
+    padding: 7vw 5vw;
+  }
+  .use-cases-column__title {
+    margin-bottom: 30px;
+  }
 }

@@ -1,5 +1,4 @@
 .about-title {
-  line-height: 1;
   position: relative;
   color: #fff;
   background-color: $primary;
@@ -11,11 +10,6 @@
       bottom: 0;
     }
   }
-}
-
-.about-text {
-  line-height: 1.2;
-  text-align: justify;
 }
 
 .about-advantages {
@@ -31,12 +25,10 @@
 
 .about-advantages-decor {
   width: 16.6666%;
-  margin-right: 7px;
   flex-shrink: 0;
 }
 
 .about-advantages-icon {
-  max-width: 68px;
   max-height: 68px;
   fill: $primary;
 }
@@ -47,6 +39,7 @@
 
 @media (min-width: 768px) {
   .about-title {
+    line-height: 1.1;
     padding: 93px 130px 93px 95px;
   }
   .about-text {
@@ -54,6 +47,16 @@
   }
   .about-advantages-item {
     margin-bottom: 15px;
+  }
+  .about-text {
+    line-height: 1.2;
+    text-align: justify;
+  }
+  .about-advantages-decor {
+    margin-right: 7px;
+  }
+  .about-advantages-icon {
+    max-width: 68px;
   }
 }
 
@@ -97,12 +100,18 @@
 
 @media (max-width: 767px) {
   .about-title {
-    padding: 68px 95px 82px 70px;
+    padding: 68px 9vw;
   }
   .about-text {
     margin-bottom: 85px;
   }
   .about-advantages-item:not(:last-child) {
     margin-bottom: 35px;
+  }
+  .about-advantages-decor {
+    margin-right: 15px;
+  }
+  .about-advantages-icon {
+    max-width: 100%;
   }
 }
