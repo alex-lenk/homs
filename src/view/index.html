@@ -1,62 +1,18 @@
-@@include('./includes/header.html')
-
-<header class="header" id="home">
-    <div class="header-panel">
-        <div class="header-panel__inner container">
-            <div class="header-logo">
-                <a href="#home" class="header-logo__link"><img src="img/logo.svg" alt="Homs"></a>
-            </div>
-
-            <nav class="menu-panel">
-                <ul class="menu list-unstyled" id="navbar">
-                    <li class="menu-item nav-item">
-                        <a href="#home" class="menu-link nav-link active" data-hover="О&nbsp;HOMS">О HOMS</a>
-                    </li>
-                    <li class="menu-item nav-item">
-                        <a href="#advantages" class="menu-link nav-link" data-hover="В&nbsp;чем&nbsp;польза?">В чем польза?</a>
-                    </li>
-                    <li class="menu-item nav-item d-md-none">
-                        <a href="#compare" class="menu-link nav-link" data-hover="варианты&nbsp;внедрения">варианты внедрения</a>
-                    </li>
-                    <li class="menu-item nav-item">
-                        <a href="#use-cases" class="menu-link nav-link" data-hover="сценарии&nbsp;использования">сценарии <span class="d-md-none">использования</span></a>
-                    </li>
-                    <li class="menu-item nav-item">
-                        <a href="#faq" class="menu-link nav-link" data-hover="FAQ">FAQ</a>
-                    </li>
-                    <li class="menu-item nav-item">
-                        <a href="#contacts" class="menu-link nav-link" data-hover="Контакты">Контакты</a>
-                    </li>
-                </ul>
-                <span class="menu-close"></span>
-            </nav>
-
-            <a href="tel:+79158280033" rel="nofollow" class="header-phone">+7 (915) 828-00-33</a>
-
-            <button type="button" class="menu-toggle">меню</button>
-        </div>
-    </div>
-
-    <div class="header-info container">
-        <div class="header-info__content">
-            <h1 class="header-info__title">homs</h1>
-            <p class="header-info__text">
-                Программа, позволяющая автоматизировать управленческий учет в&nbsp;гостинице
-            </p>
-        </div>
-        <div class="header-info__media">
-            <div class="header-video">
-                <div class="header-video__wrap embed-responsive embed-responsive-16by9">
-                    <iframe class="header-video__frame embed-responsive-item"
-                            data-src="https://www.youtube.com/embed/6FUmapkqPn0?controls=1"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="header-video__play"></div>
-            </div>
-        </div>
-    </div>
-</header>
+@@include('./includes/header.html', {
+"title": "Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице",
+"description": "Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице",
+"lang": "ru",
+"lang_ru": " header-lang__active",
+"lang_en": "",
+"home": "О&nbsp;HOMS",
+"advantages": "В&nbsp;чем&nbsp;польза?",
+"compare": "Варианты&nbsp;внедрения",
+"cases": "Сценарии&nbsp;использования",
+"faq": "FAQ",
+"contacts": "Контакты",
+"menu": "меню",
+"text": "Программа, позволяющая автоматизировать управленческий учет в&nbsp;гостинице"
+})
 
 <section class="about container" id="two">
     <h2 class="about-title">
@@ -162,9 +118,13 @@
                 aria-expanded="false" aria-controls="collapse6">
                 <div class="accordion-item__point">06</div>
             </li>
+            <li class="accordion-item collapsed" id="heading7" data-toggle="collapse" data-target="#collapse7"
+                aria-expanded="false" aria-controls="collapse7">
+                <div class="accordion-item__point">07</div>
+            </li>
         </ol>
         <div class="accordion-content col-11">
-            <div id="collapse1" class="accordion-content__item collapse show" aria-labelledby="heading1" data-parent="#accordionAdvantages">
+            <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionAdvantages">
                 <div class="accordion-content__body">
                     <h3 class="accordion-content__title">HOMS позволяет экономить</h3>
                     Управленческий учет в&nbsp;гостинице, как правило, ведется в&nbsp;Excel. Главный минус этого&nbsp;&mdash;
@@ -176,71 +136,58 @@
                     Это позволит гостинице сэкономить более шестисот тысяч рублей в&nbsp;год!
                 </div>
             </div>
-
             <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionAdvantages">
                 <div class="accordion-content__body">
-                    <h3 class="accordion-content__title">2 HOMS позволяет экономить</h3>
-                    2 Управленческий учет в&nbsp;гостинице, как правило, ведется в&nbsp;Excel. Главный минус этого&nbsp;&mdash;
-                    денежные затраты на&nbsp;специалистов, перебивающих данные из&nbsp;учетной системы в&nbsp;Excel. С&nbsp;HOMS
-                    у&nbsp;вас не&nbsp;будет этих затрат! Вы&nbsp;получаете готовый отчет автоматически и&nbsp;концентрируетесь
-                    на&nbsp;анализе данных. Больше не&nbsp;надо никого уговаривать остаться после работы &laquo;т.к.
-                    завтра сдавать отчет шефу&raquo;! Представлен примерный расчет прямой экономии. При внедрении HOMS
-                    отпадет необходимость, как минимум, в&nbsp;одном специалисте, занимающемся ручным переносом данных.
-                    Это позволит гостинице сэкономить более шестисот тысяч рублей в&nbsp;год!
+                    <h3 class="accordion-content__title">HOMS экономит не только деньги, но и время</h3>
+                    Очень часто мы&nbsp;слышим от&nbsp;финансистов, отвечающих за&nbsp;управленческий учет, что
+                    критически не&nbsp;хватает времени на&nbsp;анализ! С&nbsp;HOMS вы&nbsp;получите две дополнительные
+                    недели каждый месяц или 504 дополнительных человеко-часа в&nbsp;год на&nbsp;вдумчивый анализ
+                    результатов деятельности.
                 </div>
             </div>
             <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionAdvantages">
                 <div class="accordion-content__body">
-                    <h3 class="accordion-content__title">3 HOMS позволяет экономить</h3>
-                    3 Управленческий учет в&nbsp;гостинице, как правило, ведется в&nbsp;Excel. Главный минус этого&nbsp;&mdash;
-                    денежные затраты на&nbsp;специалистов, перебивающих данные из&nbsp;учетной системы в&nbsp;Excel. С&nbsp;HOMS
-                    у&nbsp;вас не&nbsp;будет этих затрат! Вы&nbsp;получаете готовый отчет автоматически и&nbsp;концентрируетесь
-                    на&nbsp;анализе данных. Больше не&nbsp;надо никого уговаривать остаться после работы &laquo;т.к.
-                    завтра сдавать отчет шефу&raquo;! Представлен примерный расчет прямой экономии. При внедрении HOMS
-                    отпадет необходимость, как минимум, в&nbsp;одном специалисте, занимающемся ручным переносом данных.
-                    Это позволит гостинице сэкономить более шестисот тысяч рублей в&nbsp;год!
+                    <h3 class="accordion-content__title">HOMS наводит порядок</h3>
+                    Результат работы программы&nbsp;&mdash; ежемесячное автоматическое формирование отчета. Его мы&nbsp;называем
+                    Databook. Это 16&nbsp;страничный документ обо всех аспектах деятельности гостиницы. Если&nbsp;же
+                    предустановленный набор отчетов вас не&nbsp;устроит, в&nbsp;HOMS встроен конструктор. Вы&nbsp;всегда
+                    можете создать свой собственный отчет!
                 </div>
             </div>
             <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionAdvantages">
                 <div class="accordion-content__body">
-                    <h3 class="accordion-content__title">4 HOMS позволяет экономить</h3>
-                    4 Управленческий учет в&nbsp;гостинице, как правило, ведется в&nbsp;Excel. Главный минус этого&nbsp;&mdash;
-                    денежные затраты на&nbsp;специалистов, перебивающих данные из&nbsp;учетной системы в&nbsp;Excel. С&nbsp;HOMS
-                    у&nbsp;вас не&nbsp;будет этих затрат! Вы&nbsp;получаете готовый отчет автоматически и&nbsp;концентрируетесь
-                    на&nbsp;анализе данных. Больше не&nbsp;надо никого уговаривать остаться после работы &laquo;т.к.
-                    завтра сдавать отчет шефу&raquo;! Представлен примерный расчет прямой экономии. При внедрении HOMS
-                    отпадет необходимость, как минимум, в&nbsp;одном специалисте, занимающемся ручным переносом данных.
-                    Это позволит гостинице сэкономить более шестисот тысяч рублей в&nbsp;год!
+                    <h3 class="accordion-content__title">HOMS избавляет от рутины</h3>
+                    Все, что можно посчитать, HOMS сделает за&nbsp;вас! Система посчитает динамику доходов и&nbsp;расходов
+                    в&nbsp;разрезе план&nbsp;/ факт&nbsp;/ отклонение&nbsp;/ прошлый год как за&nbsp;конкретный месяц,
+                    так и&nbsp;нарастающим итогом с&nbsp;начала года. Задача пользователя&nbsp;&mdash; анализ.
                 </div>
             </div>
             <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionAdvantages">
                 <div class="accordion-content__body">
-                    <h3 class="accordion-content__title">5 HOMS позволяет экономить</h3>
-                    5 Управленческий учет в&nbsp;гостинице, как правило, ведется в&nbsp;Excel. Главный минус этого&nbsp;&mdash;
-                    денежные затраты на&nbsp;специалистов, перебивающих данные из&nbsp;учетной системы в&nbsp;Excel. С&nbsp;HOMS
-                    у&nbsp;вас не&nbsp;будет этих затрат! Вы&nbsp;получаете готовый отчет автоматически и&nbsp;концентрируетесь
-                    на&nbsp;анализе данных. Больше не&nbsp;надо никого уговаривать остаться после работы &laquo;т.к.
-                    завтра сдавать отчет шефу&raquo;! Представлен примерный расчет прямой экономии. При внедрении HOMS
-                    отпадет необходимость, как минимум, в&nbsp;одном специалисте, занимающемся ручным переносом данных.
-                    Это позволит гостинице сэкономить более шестисот тысяч рублей в&nbsp;год!
+                    <h3 class="accordion-content__title">HOMS помогает в анализе данных</h3>
+                    Высокий уровень детализации данных позволит четко определить проблемные точки и&nbsp;концентрировать
+                    усилия на&nbsp;конкретных действиях по&nbsp;устранению негативных отклонений.
                 </div>
             </div>
             <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionAdvantages">
                 <div class="accordion-content__body">
-                    <h3 class="accordion-content__title">6 HOMS позволяет экономить</h3>
-                    6 Управленческий учет в&nbsp;гостинице, как правило, ведется в&nbsp;Excel. Главный минус этого&nbsp;&mdash;
-                    денежные затраты на&nbsp;специалистов, перебивающих данные из&nbsp;учетной системы в&nbsp;Excel. С&nbsp;HOMS
-                    у&nbsp;вас не&nbsp;будет этих затрат! Вы&nbsp;получаете готовый отчет автоматически и&nbsp;концентрируетесь
-                    на&nbsp;анализе данных. Больше не&nbsp;надо никого уговаривать остаться после работы &laquo;т.к.
-                    завтра сдавать отчет шефу&raquo;! Представлен примерный расчет прямой экономии. При внедрении HOMS
-                    отпадет необходимость, как минимум, в&nbsp;одном специалисте, занимающемся ручным переносом данных.
-                    Это позволит гостинице сэкономить более шестисот тысяч рублей в&nbsp;год!
+                    <h3 class="accordion-content__title">HOMS умеет визуализировать</h3>
+                    Специально для подготовки отчетов руководству и&nbsp;акционерам мы&nbsp;встроили механизм
+                    визуализации данных. HOMS Dashboard поможет наглядно донести главные результаты работы гостиницы!
+                </div>
+            </div>
+            <div id="collapse7" class="collapse" aria-labelledby="heading7" data-parent="#accordionAdvantages">
+                <div class="accordion-content__body">
+                    <h3 class="accordion-content__title">HOMS повышает конкурентоспособность</h3>
+                    Благодаря HOMS вы&nbsp;закрываете месяц 5-го числа. На&nbsp;практике это означает, что вы&nbsp;получаете
+                    туже информацию и&nbsp;в&nbsp;те&nbsp;же сроки, что и&nbsp;международные гостиничные операторы,
+                    работающие в&nbsp;вашем городе.
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="advantages-calculation row">
+    <div class="advantages-calculation row collapse show" id="advantagesCalculation1">
         <div class="col-lg-6">
             <div class="advantages-calculation__title">
                 Расчет годовой экономии<br>
@@ -249,8 +196,8 @@
 
             <ul class="calculation-list">
                 <li class="calculation-list__item row">
-                    <div class="calculation-list__label col-8">Количество специалистов,
-                        выполняющие ручные операции
+                    <div class="calculation-list__label col-8">
+                        Количество специалистов, выполняющие ручные операции
                     </div>
                     <div class="calculation-list__option col-4">1</div>
                 </li>
@@ -288,6 +235,57 @@
                     <div class="calculation-compare__text">экономия более</div>
                     <div class="calculation-compare__total">
                         <span>600 000</span>
+                        <span class="calculation-compare__text">в год!</span>
+                    </div>
+                </div>
+
+                <span class="spin"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="advantages-calculation col-12 row collapse" id="advantagesCalculation2">
+        <div class="col-lg-6">
+            <div class="advantages-calculation__title">
+                Расчет годовой экономии<br>
+                человеко-часов
+            </div>
+
+            <ul class="calculation-list">
+                <li class="calculation-list__item row">
+                    <div class="calculation-list__label col-8">
+                        Количество специалистов, выполняющие ручные операции
+                    </div>
+                    <div class="calculation-list__option col-4">1</div>
+                </li>
+                <li class="calculation-list__item row">
+                    <div class="calculation-list__label col-8">
+                        Примерное кол-во человеко-часов на подготовку ежемесячного отчета вручную.
+                        Сдача отчета - 20-го числа
+                    </div>
+                    <div class="calculation-list__option col-4">42</div>
+                </li>
+                <li class="calculation-list__item row">
+                    <div class="calculation-list__label col-8">Количество месяцев</div>
+                    <div class="calculation-list__option col-4">12</div>
+                </li>
+            </ul>
+
+            <div class="calculation-total row">
+                <div class="col-8">Итого:</div>
+                <div class="col-4">
+                    <div class="calculation-total__cost">
+                        504
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="calculation-compare">
+                <div>
+                    <div class="calculation-compare__text">экономия более</div>
+                    <div class="calculation-compare__total">
+                        <span>500</span>
                         <span class="calculation-compare__text">в год!</span>
                     </div>
                 </div>
@@ -468,8 +466,9 @@
 
             <div id="faqCollapse2" class="collapse" aria-labelledby="faqHead2" data-parent="#faqCollapse">
                 <div class="faq-card__body">
-                    2 Пять-семь месяцев. Период внедрения зависит от&nbsp;количества программ, которые нужно
-                    интегрировать с&nbsp;HOMS и&nbsp;от&nbsp;количества отелей
+                    У&nbsp;двух разных заказчиков будут две разные версии HOMS. Это связано с&nbsp;тем, что каждый отель
+                    имеет свою конфигурацию ПО. Мы&nbsp;настраиваем программу индивидуально под потребности конкретного
+                    заказчика. Поэтому HOMS устанавливается только специалистами ПФМ
                 </div>
             </div>
         </div>
@@ -481,8 +480,7 @@
 
             <div id="faqCollapse3" class="collapse" aria-labelledby="faqHead3" data-parent="#faqCollapse">
                 <div class="faq-card__body">
-                    3 Пять-семь месяцев. Период внедрения зависит от&nbsp;количества программ, которые нужно
-                    интегрировать с&nbsp;HOMS и&nbsp;от&nbsp;количества отелей
+                    В&nbsp;стоимость внедрения входит необходимое количество часов для обучения пользователей
                 </div>
             </div>
         </div>
@@ -494,8 +492,8 @@
 
             <div id="faqCollapse4" class="collapse" aria-labelledby="faqHead4" data-parent="#faqCollapse">
                 <div class="faq-card__body">
-                    4 Пять-семь месяцев. Период внедрения зависит от&nbsp;количества программ, которые нужно
-                    интегрировать с&nbsp;HOMS и&nbsp;от&nbsp;количества отелей
+                    HOMS устанавливается на&nbsp;сервере заказчика. HOMS не&nbsp;обменивается данными с&nbsp;внешним
+                    миром.
                 </div>
             </div>
         </div>
@@ -507,8 +505,11 @@
 
             <div id="faqCollapse5" class="collapse" aria-labelledby="faqHead5" data-parent="#faqCollapse">
                 <div class="faq-card__body">
-                    5 Пять-семь месяцев. Период внедрения зависит от&nbsp;количества программ, которые нужно
-                    интегрировать с&nbsp;HOMS и&nbsp;от&nbsp;количества отелей
+                    Наш подход&nbsp;&mdash; фиксированная плата за&nbsp;внедрение HOMS. Она в&nbsp;себя включает
+                    изучение текущего состояния IT-систем заказчика, развертывание HOMS, формирование системы раннего
+                    закрытия месяца, а&nbsp;также обучение работе с&nbsp;программой. Вам не&nbsp;нужно беспокоиться, что
+                    &laquo;счетчик включен&raquo;. Согласованные, предсказуемые, фиксированные платежи означают, что
+                    вы&nbsp;можете точно рассчитать стоимость внедрения
                 </div>
             </div>
         </div>

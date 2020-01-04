@@ -26,8 +26,23 @@
 
 $(document).ready(function () {
     /* BEGIN Initial stick header-panel  */
-    $('.header-panel').stickUp();
+    $('.menu-panel').stickUp();
     /* END */
+
+
+
+    $('#heading2,#heading3,#heading4,#heading5,#heading6,#heading7').click(function () {
+        $('#advantagesCalculation1').removeClass('show');
+    });
+    $('#heading1').click(function () {
+        $('#advantagesCalculation1').addClass('show');
+    });
+    $('#heading1,#heading3,#heading4,#heading5,#heading6,#heading7').click(function () {
+        $('#advantagesCalculation2').removeClass('show');
+    });
+    $('#heading2').click(function () {
+        $('#advantagesCalculation2').addClass('show');
+    });
 
 
 

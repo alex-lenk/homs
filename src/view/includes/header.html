@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="ru">
+<html lang="@@lang">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице</title>
-    <meta name="description" content="Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице">
+    <title>@@title</title>
+    <meta name="description" content="@@description">
 
     <link rel="stylesheet" href="css/lib.min.css">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.min.css?ver=1.5">
 
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -20,3 +20,65 @@
     <meta name="theme-color" content="#1f50a4">
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="20">
+<header class="header" id="home">
+    <div class="header-panel">
+        <div class="header-panel__inner container">
+            <div class="header-logo">
+                <a href="#home" class="header-logo__link"><img src="img/logo.svg" alt="Homs"></a>
+            </div>
+
+            <a href="tel:+79158280033" rel="nofollow" class="header-phone">+7 (915) 828-00-33</a>
+
+            <ul class="header-lang list-unstyled">
+                <li class="header-lang__item @@lang_ru"><a href="/">RU</a></li>
+                <li class="header-lang__item @@lang_en"><a href="index-en.html">EN</a></li>
+            </ul>
+
+            <button type="button" class="menu-toggle">@@menu</button>
+        </div>
+    </div>
+
+    <nav class="menu-panel">
+        <ul class="menu container" id="navbar">
+            <li class="menu-item nav-item">
+                <a href="#home" class="menu-link nav-link active" data-hover="@@home">@@home</a>
+            </li>
+            <li class="menu-item nav-item">
+                <a href="#advantages" class="menu-link nav-link" data-hover="@@advantages">@@advantages</a>
+            </li>
+            <li class="menu-item nav-item d-md-none">
+                <a href="#compare" class="menu-link nav-link" data-hover="@@compare">@@compare</a>
+            </li>
+            <li class="menu-item nav-item">
+                <a href="#use-cases" class="menu-link nav-link" data-hover="@@cases">@@cases</a>
+            </li>
+            <li class="menu-item nav-item">
+                <a href="#faq" class="menu-link nav-link" data-hover="@@faq">@@faq</a>
+            </li>
+            <li class="menu-item nav-item">
+                <a href="#contacts" class="menu-link nav-link" data-hover="@@contacts">@@contacts</a>
+            </li>
+        </ul>
+        <span class="menu-close"></span>
+    </nav>
+
+    <div class="header-info container">
+        <div class="header-info__content">
+            <h1 class="header-info__title">homs</h1>
+            <p class="header-info__text">
+                @@text
+            </p>
+        </div>
+        <div class="header-info__media">
+            <div class="header-video">
+                <div class="header-video__wrap embed-responsive embed-responsive-16by9">
+                    <iframe class="header-video__frame embed-responsive-item"
+                            data-src="https://www.youtube.com/embed/6FUmapkqPn0?controls=1"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <div class="header-video__play"></div>
+            </div>
+        </div>
+    </div>
+</header>
