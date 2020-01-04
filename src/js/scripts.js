@@ -26,7 +26,7 @@
 
 $(document).ready(function () {
     /* BEGIN Initial stick header-panel  */
-    $('.header-panel').stickUp();
+    $('.menu-panel').stickUp();
     /* END */
 
 
