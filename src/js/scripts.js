@@ -1,7 +1,7 @@
 'use strict';
 
 /* BEGIN mobile device definition  */
-/*var isMobile = {
+var isMobile = {
     Android: function () {
         return navigator.userAgent.match(/Android/i);
     },
@@ -20,13 +20,19 @@
     any: function () {
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
     }
-};*/
+};
 /* END */
 
 
 $(document).ready(function () {
     /* BEGIN Initial stick header-panel  */
-    $('.menu-panel').stickUp();
+    if (!isMobile.any()) {
+        $('.menu-panel').stickUp();
+        console.log('menu-panel');
+    } else {
+        $('.header-panel').stickUp();
+        console.log('header-panel');
+    }
     /* END */
 
 
