@@ -28,15 +28,14 @@ $(document).ready(function () {
     /* BEGIN Initial stick header-panel  */
     if (!isMobile.any()) {
         $('.menu-panel').stickUp();
-        console.log('menu-panel');
     } else {
         $('.header-panel').stickUp();
-        console.log('header-panel');
     }
     /* END */
 
 
 
+    /* BEGIN Logig on accordion for faq block */
     $('#heading2,#heading3,#heading4,#heading5,#heading6,#heading7').click(function () {
         $('#advantagesCalculation1').removeClass('show');
     });
@@ -49,6 +48,7 @@ $(document).ready(function () {
     $('#heading2').click(function () {
         $('#advantagesCalculation2').addClass('show');
     });
+    /* END */
 
 
 
