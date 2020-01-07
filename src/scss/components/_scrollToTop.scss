@@ -9,7 +9,7 @@
   border-radius: 5px;
   z-index: 5;
   position: fixed;
-  border: 2px solid #fff;
+  border: 2px solid $white;
   cursor: pointer;
   background-color: $primary;
   transition: opacity .3s;
@@ -22,6 +22,6 @@
 .scroll-to-top__icon {
   width: 11px;
   height: 11px;
-  fill: #fff;
+  fill: $white;
   transform: rotate(90deg);
 }

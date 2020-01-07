@@ -5,6 +5,8 @@
 // stylelint-disable value-keyword-case
 $font-family-base: 'Sylfaen', -apple-system, BlinkMacSystemFont, Arial, "Helvetica Neue", sans-serif;
 $body-color: #000;
+$white: #fff;
+$primary: #1f50a4;
 $line-height-base: 1.4;
 
 // Grid containers
@@ -18,16 +20,6 @@ $container-max-widths: (
         xl: 1200px
 );
 
-// Grid columns
-//
-// Set the number of columns and specify the width of the gutters.
-
-
-// stylelint-disable-next-line scss/dollar-variable-default
-//$red: #e62b2b;
-//$pink: #f85c70;
-$primary: #1f50a4;
-//$yellowColor: #fed60c;
 
 // Links
 //

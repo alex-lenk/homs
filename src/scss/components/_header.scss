@@ -115,7 +115,7 @@
     top: 50%;
     left: 50%;
     border: 10px solid transparent;
-    border-left-color: #fff8;
+    border-left-color: $white;
     position: absolute;
     z-index: 3;
     content: '';
@@ -156,15 +156,13 @@
     height: 100%;
   }
   .header-info__content {
-    padding-top: 119px;
+    padding-top: 50px;
   }
 
   .header-info__title {
     font-size: 140px;
   }
   .header-info__media {
-    width: 900px;
-    height: 468px;
     background: url(../img/bg-media.png) no-repeat top center;
     background-size: contain;
     z-index: 2;
@@ -178,6 +176,29 @@
   }
 }
 
+@media (min-width: 992px) {
+  .header {
+    padding-bottom: 70px;
+  }
+  .header-info__media {
+    width: 650px;
+    height: 338px;
+    top: 19%;
+    right: -7px;
+    position: absolute;
+  }
+  .header-info__text {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .header-info__media {
+    width: 725px;
+    height: 376px;
+  }
+}
+
 @media (min-width: 1200px) {
   .header {
     height: 922px;
@@ -185,14 +206,12 @@
   .header-phone:hover {
     color: $primary;
   }
-
-  .header-info__text {
-    max-width: 400px;
-  }
   .header-info__media {
-    top: 19%;
-    right: -7px;
-    position: absolute;
+    width: 900px;
+    height: 468px;
+  }
+  .header-info__content {
+    padding-top: 119px;
   }
 }
 
@@ -205,26 +224,25 @@
 }
 
 @media (max-width: 1199px) {
+  .header-panel {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .header-info__text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 991px) {
   .header-info__content {
     text-align: center;
     position: relative;
     z-index: 1;
   }
-  .header-info__text {
-    font-size: 40px;
-  }
   .header-info__media {
     position: relative;
     margin-right: auto;
     margin-left: auto;
-  }
-  .header-logo {
-    margin-right: auto;
-  }
-}
-
-@media (max-width: 991px) {
-  .header-info__media {
     display: none;
   }
 }
@@ -268,6 +286,17 @@
 @media (min-width: 576px) and (max-width: 767px) {
   .header-lang {
     margin-right: 45px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-info__media {
+    margin-top: -120px;
+    top: 50%;
+  }
+  .header-info__text {
+    font-size: 24px;
+    max-width: 355px;
   }
 }
 
