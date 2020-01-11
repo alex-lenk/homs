@@ -255,6 +255,18 @@
   .accordion-content__title {
     font-size: 5vw;
   }
+  .accordion-content__hide-m {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .calculation-compare__total .calculation-compare__text {
+    text-align: left;
+  }
+  .calculation-compare__text {
+    font-size: 4vw;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
