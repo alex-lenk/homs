@@ -53,7 +53,7 @@ $(document).ready(function () {
 
 
     /* BEGIN play video on desktop  */
-    $('.header-video__play').click(function () {
+/*    $('.header-video__play').click(function () {
 
         var $video = $('.header-video__frame'),
             src = $video.attr('data-src');
@@ -61,7 +61,7 @@ $(document).ready(function () {
         $video.attr('src', src + '&autoplay=1');
 
         $('.header-video').addClass('header-video__open');
-    });
+    });*/
     /* END */
 
 
