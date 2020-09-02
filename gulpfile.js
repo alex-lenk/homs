@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 
 gulp.task('svgIcons', function () {
     return gulp
-        .src('./src/img/icons/*.svg')
+        .src('./src/img/icon/*.svg')
         .pipe(svgmin(function (file) {
             var prefix = basePath.basename(file.relative, basePath.extname(file.relative));
             return {

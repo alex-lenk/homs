@@ -38,6 +38,9 @@
 }
 
 @media (min-width: 768px) {
+  .about {
+    margin-bottom: 128px;
+  }
   .about-title {
     line-height: 1.1;
     padding: 93px 130px 93px 95px;
@@ -61,10 +64,6 @@
 }
 
 @media (min-width: 1200px) {
-  .about {
-    margin-bottom: 40px;
-  }
-
   .about-title {
     max-width: 845px;
     margin-top: -17%;
@@ -113,5 +112,11 @@
   }
   .about-advantages-icon {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    margin-bottom: 70px;
   }
 }

@@ -1,5 +1,9 @@
 @import "general/mixin";
 @import "general/settings";
+@import "general/fonts";
+@import "general/settings";
+@import "lib/bootstrap";
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 @import "general/common";
 @import "components/scrollToTop";
 @import "components/header";
@@ -10,3 +14,74 @@
 @import "components/use-cases";
 @import "components/faq";
 @import "components/footer";
+
+@media (min-width: 1200px) {
+  .work-section {
+    padding-top: 29px;
+  }
+  .work-inner {
+    padding: 0 35px 0 50px;
+  }
+  .work-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .work-section {
+    justify-content: center;
+  }
+  .work-decor__next {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .work-section {
+    padding-top: 60px;
+  }
+  .work-inner {
+    padding: 0 15px 0;
+  }
+  .work-title {
+    font-size: 26px;
+  }
+}
+
+.work-inner {
+  min-height: 424px;
+  position: relative;
+  border: 1px solid #e1e1e1;
+}
+
+.work-decor {
+  width: 131px;
+  height: 128px;
+  margin: -64px auto 54px;
+  background-color: #1f50a4;
+  display: flex;
+}
+
+.work-decor__icon {
+  width: 62px;
+  height: 62px;
+  margin: auto;
+  fill: #fff;
+}
+
+.work-decor__next {
+  width: 40px;
+  height: 36px;
+  position: absolute;
+  top: -50px;
+  right: -40px;
+}
+
+.work-title {
+  padding-left: 5px;
+  margin-bottom: 12px;
+}
+
+.work-list {
+  line-height: 29px;
+}
