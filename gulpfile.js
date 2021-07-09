@@ -30,7 +30,7 @@ gulp.task('svgIcons', function () {
             }
         }))
         .pipe(svgstore())
-Cre        .pipe(gulp.dest('./public_html/img/'));
+        .pipe(gulp.dest('./public_html/img/'));
 });
 
 

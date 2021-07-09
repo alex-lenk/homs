@@ -62,3 +62,4 @@ typings/
 build
 public_html
 source
+package-lock.json
