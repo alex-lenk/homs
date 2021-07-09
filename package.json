@@ -1,6 +1,6 @@
 {
   "name": "homs",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "gulpfile.js",
   "devDependencies": {
@@ -18,7 +18,7 @@
     "gulp-postcss": "latest",
     "gulp-rename": "latest",
     "gulp-rigger": "latest",
-    "gulp-rsync": "0.0.8",
+    "gulp-rsync": "latest",
     "gulp-sass": "latest",
     "gulp-uglify": "latest",
     "gulp-util": "latest",
