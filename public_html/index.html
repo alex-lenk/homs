@@ -1,18 +1,82 @@
-@@include('./includes/header.html', {
-"title": "Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице",
-"description": "Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице",
-"lang": "ru",
-"lang_ru": " header-lang__active",
-"lang_en": "",
-"home": "О&nbsp;HOMS",
-"advantages": "В&nbsp;чем&nbsp;польза?",
-"compare": "Варианты&nbsp;внедрения",
-"cases": "Сценарии&nbsp;использования",
-"faq": "FAQ",
-"contacts": "Контакты",
-"menu": "меню",
-"text": "Программа, позволяющая автоматизировать управленческий учет в&nbsp;гостинице"
-})
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице</title>
+    <meta name="description" content="Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице">
+
+    <link rel="stylesheet" href="/css/styles.min.css?ver=3.2">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#1f50a4">
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="20">
+<header class="header" id="home">
+    <div class="header-panel">
+        <div class="header-panel__inner container">
+            <div class="header-logo">
+                <a href="#home" class="header-logo__link"><img src="/img/logo.svg" alt="Homs"></a>
+            </div>
+
+            <a href="tel:+79158280033" rel="nofollow" class="header-phone">+7 (915) 828-00-33</a>
+
+            <ul class="header-lang list-unstyled">
+                <li class="header-lang__item  header-lang__active"><a href="/">RU</a></li>
+                <li class="header-lang__item "><a href="/en/">EN</a></li>
+            </ul>
+
+            <button type="button" class="menu-toggle">меню</button>
+        </div>
+    </div>
+
+    <nav class="menu-panel">
+        <ul class="menu container" id="navbar">
+            <li class="menu-item nav-item">
+                <a href="#home" class="menu-link nav-link active" data-hover="О&nbsp;HOMS">О&nbsp;HOMS</a>
+            </li>
+            <li class="menu-item nav-item">
+                <a href="#advantages" class="menu-link nav-link" data-hover="В&nbsp;чем&nbsp;польза?">В&nbsp;чем&nbsp;польза?</a>
+            </li>
+            <li class="menu-item nav-item d-md-none">
+                <a href="#compare" class="menu-link nav-link" data-hover="Варианты&nbsp;внедрения">Варианты&nbsp;внедрения</a>
+            </li>
+            <li class="menu-item nav-item">
+                <a href="#use-cases" class="menu-link nav-link" data-hover="Сценарии&nbsp;использования">Сценарии&nbsp;использования</a>
+            </li>
+            <li class="menu-item nav-item">
+                <a href="#faq" class="menu-link nav-link" data-hover="FAQ">FAQ</a>
+            </li>
+            <li class="menu-item nav-item">
+                <a href="#contacts" class="menu-link nav-link" data-hover="Контакты">Контакты</a>
+            </li>
+        </ul>
+        <span class="menu-close"></span>
+    </nav>
+
+    <div class="header-info container">
+        <div class="header-info__content">
+            <h1 class="header-info__title">homs</h1>
+            <p class="header-info__text">
+                Программа, позволяющая автоматизировать управленческий учет в&nbsp;гостинице
+            </p>
+        </div>
+    </div>
+
+    <div class="header-info__media">
+        <div class="header-video">
+            <div class="header-video__play" data-fancybox="" data-src="https://www.youtube.com/embed/IBq_x-uNBVY"></div>
+        </div>
+    </div>
+</header>
+
 
 <section class="about container" id="two">
     <h2 class="about-title">
@@ -708,4 +772,27 @@
     </div>
 </section>
 
-@@include('./includes/footer.html')
+<footer class="footer" id="contacts">
+    <div class="footer-inner container">
+        <div class="footer-logo">
+            <img src="/img/logo-w.svg" alt="Homs">
+        </div>
+        <div class="footer-contacts">
+            <div class="footer-contacts__phone">
+                <a href="tel:+79158280033" rel="nofollow" class="footer-contacts__link">+7 (915) 828-00-33</a>
+            </div>
+            <a href="mailto:info@homs.top" rel="nofollow" class="footer-contacts__mail footer-contacts__link">info@homs.top</a>
+        </div>
+    </div>
+</footer>
+
+<div class="scroll-to-top">
+    <svg class="scroll-to-top__icon">
+        <use xlink:href="/img/icon.svg#arrow"></use>
+    </svg>
+</div>
+
+<script src="/js/scripts.min.js?ver=2.0"></script>
+</body>
+</html>
+

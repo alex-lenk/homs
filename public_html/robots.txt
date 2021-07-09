@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: homs.top
+Sitemap: https://homs.top/sitemap.xml
