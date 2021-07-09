@@ -60,4 +60,5 @@ typings/
 *.iml
 .idea
 build
+public_html
 source

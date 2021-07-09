@@ -27,19 +27,19 @@
   }
 
   .compare-row {
-    &:nth-child(odd) .compare-cell {
+    &:nth-child(even) .compare-cell {
       background-color: #f4f4f4;
     }
 
-    &:nth-child(even) {
+    &:nth-child(odd) {
       background-color: #e8e8e8;
     }
   }
 
   .compare-label {
     padding: 7px 15px;
-    flex-basis: 43%;
-    max-width: 43%;
+    flex-basis: 55%;
+    max-width: 55%;
   }
 
   .compare-cell {
@@ -50,8 +50,8 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    max-width: 18%;
-    flex-basis: 18%;
+    max-width: 15%;
+    flex-basis: 15%;
 
     &:nth-of-type(3) {
       max-width: 21%;

@@ -30,7 +30,7 @@ gulp.task('svgIcons', function () {
             }
         }))
         .pipe(svgstore())
-        .pipe(gulp.dest('./build/img/'));
+Cre        .pipe(gulp.dest('./public_html/img/'));
 });
 
 
@@ -38,7 +38,7 @@ gulp.task('svgIcons', function () {
 gulp.task('browser-sync', function () {
     browserSync({
         server: {
-            baseDir: './build'
+            baseDir: './public_html'
         },
         notify: false
     })
@@ -49,9 +49,9 @@ gulp.task('styles', function () {
     return gulp.src('./src/scss/*.scss')
         .pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix: ''}))
-        .pipe(postcss([autoprefixer()]))
+        //.pipe(postcss([autoprefixer()]))
         .pipe(cleancss({level: {1: {specialComments: 0}}})) // Opt., comment out when debugging
-        .pipe(gulp.dest('./build/css'))
+        .pipe(gulp.dest('./public_html/css'))
         .pipe(browserSync.stream())
 });
 
@@ -61,7 +61,7 @@ gulp.task('scripts', function () {
         .pipe(rigger())
         .pipe(uglify())
         .pipe(rename({suffix: '.min', prefix: ''}))
-        .pipe(gulp.dest('./build/js'))
+        .pipe(gulp.dest('./public_html/js'))
         .pipe(browserSync.reload({stream: true}))
 });
 
@@ -69,13 +69,13 @@ gulp.task('scripts', function () {
 gulp.task('html', function () {
     return gulp.src('./src/view/*.html')
         .pipe(fileinclude())
-        .pipe(gulp.dest('./build'))
+        .pipe(gulp.dest('./public_html'))
         .pipe(browserSync.reload({stream: true}))
 });
 gulp.task('htmlEn', function () {
     return gulp.src('./src/view/en/*.html')
         .pipe(fileinclude())
-        .pipe(gulp.dest('./build/en'))
+        .pipe(gulp.dest('./public_html/en'))
         .pipe(browserSync.reload({stream: true}))
 });
 
@@ -84,7 +84,7 @@ gulp.task('img', function () {
     return gulp.src([
         './src/img/**/*.*'
     ])
-        .pipe(gulp.dest('./build/img'))
+        .pipe(gulp.dest('./public_html/img'))
         .pipe(browserSync.reload({stream: true}))
 });
 
@@ -93,7 +93,7 @@ gulp.task('favicon', function () {
     return gulp.src([
         './src/favicon/*.*'
     ])
-        .pipe(gulp.dest('./build/favicon'))
+        .pipe(gulp.dest('./public_html/favicon'))
         .pipe(browserSync.reload({stream: true}))
 });
 
@@ -102,7 +102,7 @@ gulp.task('fonts', function () {
     return gulp.src([
         './src/fonts/*.*'
     ])
-        .pipe(gulp.dest('./build/fonts'))
+        .pipe(gulp.dest('./public_html/fonts'))
         .pipe(browserSync.reload({stream: true}))
 });
 
@@ -110,7 +110,7 @@ gulp.task('fonts', function () {
 gulp.task('rsync', function () {
     return gulp.src('./src/**')
         .pipe(rsync({
-            root: './build/',
+            root: './public_html/',
             hostname: 'username@yousite.com',
             destination: 'yousite/public_html/',
             // include: ['*.htaccess'], // Includes files to deploy
