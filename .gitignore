@@ -61,7 +61,7 @@ yarn.lock
 *.iml
 .idea
 build
-public_html/includes
+public_html
 source
 package-lock.json
 process.json
