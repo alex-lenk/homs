@@ -1,0 +1,9 @@
+@mixin hidePlaceholder {
+  &::placeholder {
+    @content;
+  }
+
+  &::input-placeholder {
+    @content;
+  }
+}

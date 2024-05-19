@@ -1,0 +1,174 @@
+.container {
+  max-width: 1232px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-default {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.text-white {
+  color: var(--white) !important;
+}
+
+.text-black {
+  color: var(--black) !important;
+}
+
+.text-gray900 {
+  color: var(--gray900) !important;
+}
+
+.text-blue {
+  color: var(--blue) !important;
+}
+
+.text-dark-blue {
+  color: var(--darkBlue) !important;
+}
+
+.font-family-lora {
+  font-family: var(--font-family-lora) !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.bg-gray500 {
+  background-color: var(--gray500) !important;
+}
+
+.bg-blue {
+  background-color: var(--blue) !important;
+}
+
+.bg-navyBlue {
+  background-color: var(--navyBlue) !important;
+}
+
+.bg-dark-blue {
+  background-color: var(--darkBlue) !important;
+}
+
+.list-circle {
+  counter-reset: num;
+  list-style: none;
+  padding-left: 31px;
+
+  .list-dot {
+    padding-left: 0;
+  }
+}
+
+.list-circle__item {
+  margin-bottom: 20px;
+}
+
+.list-circle__text {
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    width: 21px;
+    height: 21px;
+    top: 2px;
+    left: -31px;
+    position: absolute;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--blue);
+    content: counter(num);
+    counter-increment: num;
+  }
+}
+
+.list-dot {
+  list-style: none;
+  padding-left: 26px;
+}
+
+.list-dot__item {
+  position: relative;
+
+  &::before {
+    width: 7px;
+    height: 7px;
+    top: 8px;
+    left: -26px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--blue);
+    content: '';
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.btn {
+  padding: 15px 25px;
+  display: inline-flex;
+  justify-content: center;
+  border: 0 solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #1961AA;
+  transition: opacity .2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-decor {
+  padding-right: 50px;
+  position: relative;
+
+  &::after {
+    border: 11px solid transparent;
+    border-top-color: var(--white);
+    border-right-color: var(--white);
+    width: 0;
+    height: 0;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+    position: absolute;
+    content: '';
+  }
+
+  @include media('<=767px') {
+    width: 100%;
+  }
+}
