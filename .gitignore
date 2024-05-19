@@ -65,3 +65,5 @@ public_html
 source
 package-lock.json
 process.json
+*.mp4
+*.webm

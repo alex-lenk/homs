@@ -1,5 +1,0 @@
-RewriteEngine on
-
-RewriteCond %{HTTP_HOST} ^(www\.)?homs\.expert$
-
-RewriteRule ^(.*)$ https://homs.top/$1 [R=301,L]
