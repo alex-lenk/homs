@@ -25,7 +25,7 @@ export const paths = {
     dist: dist + '/',
   },
   styles: {
-    fonts: app + 'scss/fonts.scss',
+    fonts: app + 'scss/base/_fonts.scss',
     src: app + 'scss/*.scss',
     watch: app + '/**/*.scss',
     dist: dist + 'css/',

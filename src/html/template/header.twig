@@ -1,31 +1,5 @@
-<header class="header text-white bg-navyBlue{% if isMainPage %} header--main{% else %} header--page{% endif %}">
-  <div class="header__container container">
-    <!-- Begin: navbar -->
-    {% include '../components/navbar.twig' %}
-    <!-- End: navbar -->
-
-    {% if isMainPage %}
-      <h1 class="header__title text-uppercase">{{ title }}</h1>
-
-      <div class="header__text text-uppercase">
-        Группа компаний, оказывающих услуги, в&nbsp;области<br>
-        аудита бухгалтерского и&nbsp;налогового<br>
-        консультирования
-      </div>
-    {% else %}
-      <h1 class="header__title text-uppercase{{ titleClass }}">{{ title }}</h1>
-
-      <!-- Begin: breadcrumbs -->
-      {% block breadcrumbs %}
-        {% include '../components/breadcrumbs.twig' %}
-      {% endblock %}
-      <!-- End: breadcrumbs -->
-    {% endif %}
+<header class="header">
+  <div class="container">
+    container
   </div>
-
-  {% if isMainPage %}
-    <div class="header__decor header__decor--main"><div class="header__decor-inner header__decor-main-inner"></div></div>
-  {% else %}
-    <div class="header__decor header__decor--page"><div class="header__decor-inner header__decor-inner--page"></div></div>
-  {% endif %}
 </header>
