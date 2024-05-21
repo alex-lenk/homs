@@ -40,6 +40,21 @@
   color: var(--primary) !important;
 }
 
+.text-decor {
+  position: relative;
+
+  &::before {
+    width: 41px;
+    height: 3px;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: -54px;
+    transform: translateY(-50%);
+    content: '';
+  }
+}
+
 .font-family-tinos {
   font-family: var(--font-family-tinos) !important;
 }
