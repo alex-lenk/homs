@@ -29,22 +29,26 @@
   <meta name="theme-color" content="#0154b2">
 </head>
 <body>
+<!-- Begin: navbar -->
+{% include 'navbar.twig' with {isMainPage} %}
+<!-- End: navbar -->
+
 {% block header %}
-<!-- Begin: header -->
-{% include 'header.twig' with {isMainPage} %}
-<!-- End: header -->
+  <!-- Begin: header -->
+  {% include 'header.twig' with {isMainPage} %}
+  <!-- End: header -->
 {% endblock %}
 
 <!-- Begin: container -->
 <main class="{{ mainClass|default('container') }}">
-{% block content %}{% endblock %}
+  {% block content %}{% endblock %}
 </main>
 <!-- End: container -->
 
 {% block footer %}
-<!-- Begin: footer -->
-{% include '../template/footer.twig' %}
-<!-- End: footer -->
+  <!-- Begin: footer -->
+  {% include '../template/footer.twig' %}
+  <!-- End: footer -->
 {% endblock %}
 
 <!-- Begin: Modals -->
