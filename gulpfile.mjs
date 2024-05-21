@@ -23,6 +23,7 @@ gulp.task(switchPug);
 gulp.task(zipDist);
 gulp.task(ttfToWoff);
 gulp.task(fontsInStyle);
+gulp.task(svgSprites);
 
 const watchFiles = () => {
   gulp.watch(paths.twig.watch, gulp.parallel(twigHtml));

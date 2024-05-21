@@ -8,9 +8,10 @@
   "scripts": {
     "start": "gulp watch",
     "build": "gulp build --production",
-    "zipDist": "gulp zipDist",
+    "svgSprites": "gulp svgSprites",
     "ttfToWoff": "gulp ttfToWoff",
-    "fontsInStyle": "gulp fontsInStyle"
+    "fontsInStyle": "gulp fontsInStyle",
+    "zipDist": "gulp zipDist"
   },
   "devDependencies": {
     "@babel/core": "^7.24.5",
@@ -25,7 +26,7 @@
     "del": "^7.1.0",
     "eslint": "^9.3.0",
     "eslint-plugin-jsdoc": "^48.2.5",
-    "globals": "^15.2.0",
+    "globals": "^15.3.0",
     "gulp": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-format-html": "^2.3.0",
