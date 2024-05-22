@@ -1,7 +1,6 @@
 @use 'sass:math';
 
 .solution {
-  margin-bottom: 90px;
   position: relative;
 
   &::before {
@@ -14,6 +13,8 @@
   }
 
   @include media('>=768px') {
+    margin-bottom: 100px;
+
     &::before {
       height: 257px;
       width: 100vw;
@@ -21,6 +22,8 @@
   }
 
   @include media('<=767px') {
+    margin-bottom: 92px;
+
     &::before {
       height: 274px;
       width: calc(100% + 42px);
@@ -29,12 +32,12 @@
 }
 
 .solution__section {
-  margin-bottom: 120px;
   position: relative;
   z-index: 1;
 
   @include media('>=768px') {
     padding-top: 42px;
+    margin-bottom: 120px;
   }
 
   @include media('<=767px') {
@@ -83,7 +86,6 @@
 
   @include media('<=767px') {
     margin: -16px -20px 0;
-    padding-bottom: 88px;
   }
 }
 
