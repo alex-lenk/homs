@@ -1,5 +1,11 @@
 .issues {
-  margin-bottom: 90px;
+  @include media('>=768px') {
+    margin-bottom: 49px;
+  }
+
+  @include media('<=767px') {
+    margin-bottom: 91px;
+  }
 }
 
 .issues__heading {

@@ -1,0 +1,49 @@
+<section class="solution">
+  <div class="solution__section">
+    <div class="solution__heading section-decor">
+      <h2 class="solution__heading-title text-uppercase text-white">решение</h2>
+
+      <div class="section-subtitle text-uppercase fw-bold text-white">
+        Мы хорошо знаем эти&nbsp;проблемы, поэтому создали HOMS
+      </div>
+    </div>
+
+    {% set solutionList = [
+      {text: 'HOMS легко интегрирует любые отельные IT системы',},
+      {text: 'Умеет работать с&nbsp;большим объемом данных',},
+      {text: 'Автоматически создает полный комплект отчетов, включая отчеты по&nbsp;подразделениям',},
+      {text: 'Имеет уникальные аналитические инструменты',},
+    ] %}
+    <div class="solution__slider js-solution__slider swiper">
+      <div class="solution__slider-wrap swiper-wrapper">
+        {% for instance in solutionList %}
+          <div class="solution__item swiper-slide">
+            <div class="solution__item-inner">
+              <div>
+                {{ instance.text }}
+              </div>
+              <svg class="solution__item-decor">
+                <use href="/assets/img/icons.svg#triangle"></use>
+              </svg>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="solution__slider-control">
+        <div class="solution__slider-nav solution__slider-prev">
+          <svg class="solution__slider-nav-icon">
+            <use href="/assets/img/icons.svg#triangle"></use>
+          </svg>
+        </div>
+        <div class="solution__slider-nav solution__slider-next">
+          <svg class="solution__slider-nav-icon">
+            <use href="/assets/img/icons.svg#triangle"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="/assets/img/media/shema.png" class="solution__decor" alt="">
+</section>

@@ -1,3 +1,6 @@
+// import Swiper and modules styles
+@import '../../node_modules/swiper/swiper-bundle.min';
+
 @import 'tools/variables';
 @import 'tools/mixin';
 @import 'tools/media';
@@ -14,6 +17,7 @@
 @import 'components/section';
 @import 'components/difficulties';
 @import 'components/issues';
+@import 'components/solution';
 
 #root {
   padding-top: 90px;

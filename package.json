@@ -3,7 +3,7 @@
   "author": "AlexLenk",
   "description": "HTML5+CSS3 template for start project'",
   "license": "ISC",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "type": "module",
   "scripts": {
     "start": "gulp watch",
@@ -53,6 +53,7 @@
     "yargs": "^17.7.2"
   },
   "dependencies": {
+    "swiper": "^11.1.3"
   },
   "url": "https://github.com/alex-lenk/homs",
   "bugs": {
