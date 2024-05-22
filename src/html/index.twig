@@ -5,7 +5,11 @@
 {% set title = 'homs' %}
 
 {% block content %}
+  <!-- Begin: difficulties -->
+  {% include 'home/difficulties.twig' %}
+  <!-- End: difficulties -->
 
-  {% include 'home/solutions.twig' %}
-
+  <!-- Begin: issues -->
+  {% include 'home/issues.twig' %}
+  <!-- End: issues -->
 {% endblock %}

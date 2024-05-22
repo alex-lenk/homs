@@ -1,14 +1,24 @@
-.solutions {
-  margin-bottom: 80px;
+.difficulties {
+  @include media('>=1100px') {
+    margin-bottom: 80px;
+  }
+
+  @include media('<=1099px') {
+    margin-bottom: 42px;
+  }
 }
 
-.solutions__heading {
+.difficulties__heading {
+  @include media('>=768px') {
+    margin-bottom: 16px;
+  }
+
   @include media('<=767px') {
     margin-bottom: 39px;
   }
 }
 
-.solutions__heading-title {
+.difficulties__heading-title {
   @include media('>=768px') {
     margin-bottom: 0;
   }
@@ -18,7 +28,7 @@
   }
 }
 
-.solutions__container {
+.difficulties__container {
   @include media('>=768px') {
     padding: 40px 40px 0;
   }
@@ -34,7 +44,7 @@
   }
 }
 
-.solutions__box {
+.difficulties__box {
   font-size: 17px;
 
   @include media('>=1100px') {
@@ -43,7 +53,7 @@
   }
 }
 
-.solutions__bottom {
+.difficulties__bottom {
   @include media('>=768px') {
     width: 100%;
     text-align: right;
@@ -55,7 +65,7 @@
   }
 }
 
-.solutions__bottom-btn {
+.difficulties__bottom-btn {
   height: 60px;
   font-size: 18px;
 
