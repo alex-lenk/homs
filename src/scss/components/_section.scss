@@ -1,0 +1,36 @@
+.section-subtitle {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.section-radius {
+  border-radius: 5px;
+}
+
+.section-decor {
+  position: relative;
+
+  &::before {
+    height: 3px;
+    top: 24px;
+    background-color: var(--primary);
+    position: absolute;
+    content: '';
+  }
+
+  @include media('>=1200px') {
+    &::before {
+      width: 68px;
+      left: -84px;
+    }
+  }
+
+  @include media('<=1199px') {
+    padding-left: 52px;
+
+    &::before {
+      width: 41px;
+      left: 0;
+    }
+  }
+}

@@ -8,19 +8,19 @@
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 .text-lowercase {
-  text-transform: lowercase !important;
+  text-transform: lowercase;
 }
 
 .text-uppercase {
-  text-transform: uppercase !important;
+  text-transform: uppercase;
 }
 
 .text-capitalize {
-  text-transform: capitalize !important;
+  text-transform: capitalize;
 }
 
 .text-default {
@@ -29,42 +29,39 @@
 }
 
 .text-white {
-  color: var(--white) !important;
+  color: var(--white);
 }
 
 .text-black {
-  color: var(--black) !important;
+  color: var(--black);
 }
 
 .text-primary {
-  color: var(--primary) !important;
+  color: var(--primary);
 }
 
-.text-decor {
-  position: relative;
-
-  &::before {
-    width: 41px;
-    height: 3px;
-    background-color: var(--primary);
-    position: absolute;
-    top: 50%;
-    left: -54px;
-    transform: translateY(-50%);
-    content: '';
-  }
+.text-gray {
+  color: var(--gray);
 }
 
 .font-family-tinos {
-  font-family: var(--font-family-tinos) !important;
+  font-family: var(--font-family-tinos);
 }
 
 .fw-bold {
-  font-weight: 700 !important;
+  font-weight: 700;
+}
+
+.fw-extra-bold {
+  font-weight: 900;
 }
 
 .bg-primary {
-  background-color: var(--primary) !important;
+  background-color: var(--primary);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
 }
 
 .list-unstyled {
@@ -73,3 +70,26 @@
   list-style: none;
 }
 
+.list-dot {
+  list-style: none;
+  padding-left: 26px;
+
+  li {
+    position: relative;
+
+    &::before {
+      width: 7px;
+      height: 7px;
+      top: 8px;
+      left: -26px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: var(--primary);
+      content: '';
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

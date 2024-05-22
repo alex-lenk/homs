@@ -1,4 +1,6 @@
 .header {
+  margin-bottom: 67px;
+
   @include media('>=768px') {
     background: linear-gradient(to bottom, #0154b2 0%, #fff 100%);
   }
