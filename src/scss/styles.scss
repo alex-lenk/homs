@@ -5,6 +5,7 @@
 @import 'tools/variables';
 @import 'tools/mixin';
 @import 'tools/media';
+@import 'tools/keyframes';
 
 @import 'base/fonts';
 @import 'base/reboot';
@@ -22,6 +23,7 @@
 @import 'components/integration';
 @import 'components/reports';
 @import 'components/created';
+@import 'components/main-video';
 
 #root {
   padding-top: 90px;
