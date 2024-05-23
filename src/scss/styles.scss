@@ -1,5 +1,6 @@
 // import Swiper and modules styles
 @import '../../node_modules/swiper/swiper-bundle.min';
+@import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox';
 
 @import 'tools/variables';
 @import 'tools/mixin';
@@ -19,6 +20,7 @@
 @import 'components/issues';
 @import 'components/solution';
 @import 'components/integration';
+@import 'components/reports';
 
 #root {
   padding-top: 90px;

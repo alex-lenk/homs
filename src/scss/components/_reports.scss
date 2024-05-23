@@ -1,0 +1,154 @@
+.reports {
+  @include media('>=768px') {
+    margin-bottom: 49px;
+  }
+
+  @include media('<=767px') {
+    margin-bottom: 91px;
+  }
+}
+
+.reports__heading {
+  @include media('>=1100px') {
+    margin-bottom: 50px;
+  }
+
+  @include media('<=1099px') {
+    margin-bottom: 46px;
+  }
+}
+
+.reports__heading-title {
+  @include media('>=1100px') {
+    margin-bottom: 13px;
+  }
+
+  @include media('<=1099px') {
+    margin-bottom: 12px;
+  }
+
+  @include media('<=575px') {
+    font-size: 28px;
+  }
+}
+
+.reports__heading-text {
+  @include media('<=575px') {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.reports__container {
+  display: flex;
+  align-items: center;
+}
+
+.reports__container-decor {
+  display: none;
+
+  @include media('>=1100px') {
+    width: 230px;
+    flex-shrink: 0;
+    margin-right: 42px;
+    display: block;
+  }
+}
+
+.reports__slider {
+  position: relative;
+  z-index: 1;
+
+  .swiper-slide-shadow {
+    background: none;
+  }
+
+  @include media('>=768px') {
+    padding-left: 144px;
+    padding-right: 100px;
+  }
+
+  @include media('>=1100px') {
+    width: 926px;
+  }
+
+  @include media('<=1099px') {
+    width: 100%;
+  }
+
+  @include media('<=767px') {
+  }
+}
+
+.reports__slider-wrap {
+}
+
+.reports__slider-control {
+  margin-top: 10px;
+  display: flex;
+
+  @include media('>=768px') {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    justify-content: space-between;
+  }
+
+  @include media('<=767px') {
+    justify-content: center;
+  }
+}
+
+.reports__slider-nav {
+  border-radius: 50%;
+  background-color: var(--primary);
+  display: flex;
+
+  @include media('>=768px') {
+    width: 79px;
+    height: 79px;
+    cursor: pointer;
+  }
+
+  @include media('<=767px') {
+    width: 58px;
+    height: 58px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+
+.reports__slider-prev {
+  transform: rotate(135deg);
+}
+
+.reports__slider-next {
+  transform: rotate(-45deg);
+}
+
+.reports__slider-nav-icon {
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  fill: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
