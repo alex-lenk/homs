@@ -93,3 +93,30 @@
     }
   }
 }
+
+.list-decor {
+  padding-left: 20px;
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.list-decor__item {
+  position: relative;
+
+  &::before {
+    width: 13px;
+    height: 13px;
+    top: 4px;
+    left: -20px;
+    position: absolute;
+    background: url('../assets/img/logo/logo-ico.svg') no-repeat center;
+    background-size: contain;
+    content: '';
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
