@@ -9,20 +9,22 @@
 
       <ul class="navbar__menu text-uppercase list-unstyled">
         <li class="navbar__menu-item">
-          <a href="#" class="navbar__menu-link">О HOMS</a>
+          <a href="{{ var.about.url }}" class="navbar__menu-link">{{ var.about.name }}</a>
         </li>
         <li class="navbar__menu-item">
-          <a href="#" class="navbar__menu-link">УСЛУГИ </a>
+          <a href="{{ var.services.url }}" class="navbar__menu-link">{{ var.services.name }}</a>
         </li>
         <li class="navbar__menu-item">
-          <a href="#" class="navbar__menu-link">БАЗА ЗНАНИЙ </a>
+          <a href="{{ var.base.url }}" class="navbar__menu-link">{{ var.base.name }}</a>
         </li>
         <li class="navbar__menu-item">
-          <a href="#" class="navbar__menu-link">КОНТАКТЫ</a>
+          <a href="{{ var.contacts.url }}" class="navbar__menu-link">{{ var.contacts.name }}</a>
         </li>
       </ul>
 
-      <a href="#" class="navbar__btn btn btn-primary text-uppercase fw-extra-bold">ЛИЧНЫЙ КАБИНЕТ</a>
+      <a href="{{ var.lk.url }}" class="navbar__btn btn btn-primary text-uppercase fw-extra-bold" rel="nofollow" target="_blank">
+        {{ var.lk.name }}
+      </a>
 
       <div class="navbar__close js-navbar__close"></div>
     </div>

@@ -1,0 +1,80 @@
+.c-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 7;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
+  transition: opacity .3s ease-in-out;
+
+  &.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+.c-modal__container {
+  margin: auto;
+  padding: 24px;
+  background-color: var(--white);
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+
+  @include media('>=576px') {
+    min-width: 350px;
+  }
+
+  @include media('<=575px') {
+    max-width: 100%;
+  }
+}
+
+.c-modal__title {
+  padding-right: 50px;
+}
+
+.c-modal__close {
+  width: 42px;
+  height: 42px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--white);
+  transition: background-color .2s ease-in-out;
+
+  &:hover {
+    background-color: #1961AA;
+
+    &::before,
+    &::after {
+      background-color: var(--white);
+    }
+  }
+
+  &::before,
+  &::after {
+    width: 24px;
+    height: 2px;
+    top: 20px;
+    left: 8px;
+    position: absolute;
+    background-color: #1961AA;
+    transition: background-color .2s ease-in-out;
+    content: "";
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}

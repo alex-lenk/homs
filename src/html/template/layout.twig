@@ -1,6 +1,10 @@
-{% set version = '1.0' %}
+{% set version = '1.1' %}
 {% set var = {
-  'about': { 'url': '/#about', 'name': 'О группе' },
+  'about': { 'url': '/#about', 'name': 'О HOMS' },
+  'services': { 'url': '/#services', 'name': 'УСЛУГИ' },
+  'base': { 'url': '/#base', 'name': 'БАЗА ЗНАНИЙ' },
+  'contacts': { 'url': '/#contacts', 'name': 'КОНТАКТЫ' },
+  'lk': { 'url': 'https://usali.pro', 'name': 'ЛИЧНЫЙ КАБИНЕТ' },
 } %}
 <!DOCTYPE html>
 <html lang="ru"{{ htmlClass }}>
@@ -56,8 +60,9 @@
   <!-- End: footer -->
 {% endblock %}
 
-<!-- Begin: Modals -->
-<!-- Begin: Modals -->
+  <!-- Begin: Modals -->
+  {% include '../components/c-modal.twig' %}
+  <!-- Begin: Modals -->
 </div>
 <script src="/js/main.scripts.js?ver={{ version }}"></script>
 </body>
