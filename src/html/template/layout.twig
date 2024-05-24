@@ -1,4 +1,4 @@
-{% set version = '0.9' %}
+{% set version = '1.0' %}
 {% set var = {
   'about': { 'url': '/#about', 'name': 'О группе' },
 } %}
@@ -47,6 +47,10 @@
 <!-- End: container -->
 
 {% block footer %}
+  <!-- Begin: contacts -->
+  {% include '../template/contacts.twig' %}
+  <!-- End: contacts -->
+
   <!-- Begin: footer -->
   {% include '../template/footer.twig' %}
   <!-- End: footer -->

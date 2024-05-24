@@ -63,7 +63,7 @@
   flex-shrink: 0;
   align-self: flex-start;
   border-radius: 50%;
-  background-color: var(--primary);
+  background-color: var(--primaryDark);
   display: flex;
 
   @include media('>=1100px') {
