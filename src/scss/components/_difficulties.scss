@@ -20,7 +20,7 @@
 
 .difficulties__heading-title {
   @include media('>=768px') {
-    margin-bottom: 0;
+    margin-bottom: 6px;
   }
 
   @include media('<=767px') {

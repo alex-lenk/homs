@@ -20,6 +20,7 @@
 @import 'components/header';
 @import 'components/contacts';
 @import 'components/c-modal';
+@import 'components/breadcrumb';
 @import 'components/difficulties';
 @import 'components/issues';
 @import 'components/solution';
@@ -29,6 +30,9 @@
 @import 'components/main-video';
 @import 'components/main-info';
 @import 'components/footer';
+
+// Pages
+@import 'components/services';
 
 #root {
   padding-top: 90px;
