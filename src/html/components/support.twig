@@ -1,0 +1,39 @@
+<div class="c-modal js-c-modal" id="support-form">
+  <div class="c-modal__container">
+    <h5 class="c-modal__title text-blue text-uppercase">Связь с нами</h5>
+
+    <form action="#">
+      <div class="form__group mb-2">
+        <input type="text" name="name" class="form__control" placeholder="Имя" id="form-name">
+        <label class="form__label" for="form-name">Имя*</label>
+      </div>
+
+      <div class="form__group mb-2">
+        <input type="email" name="name" class="form__control" placeholder="E-mail" id="form-email">
+        <label class="form__label" for="form-email">E-mail*</label>
+      </div>
+
+      <div
+        class="form__group mb-4 textarea__limit-counter js-textarea__limit-counter"
+        data-textarea-count="0"
+        data-textarea-limit="200"
+      >
+          <textarea
+            name="message"
+            class="form__control js-textarea__limit"
+            maxlength="200"
+            placeholder="Ваше сообщение"
+            id="form-message"
+            aria-label="message"
+          ></textarea>
+        <label class="form__label" id="form-message">Ваше сообщение</label>
+      </div>
+
+      <button class="btn btn-primary fw-bold text-uppercase text-center">
+        Отправить
+      </button>
+    </form>
+
+    <div class="c-modal__close js-c-modal__close"></div>
+  </div>
+</div>

@@ -1,4 +1,4 @@
-{% set version = '1.1' %}
+{% set version = '1.2' %}
 {% set var = {
   'about': { 'url': '/#about', 'name': 'О HOMS' },
   'services': { 'url': '/#services', 'name': 'УСЛУГИ' },
@@ -63,6 +63,10 @@
   <!-- Begin: Modals -->
   {% include '../components/c-modal.twig' %}
   <!-- Begin: Modals -->
+
+  <!-- Begin: Support -->
+  {% include '../components/support.twig' %}
+  <!-- Begin: Support -->
 </div>
 <script src="/js/main.scripts.js?ver={{ version }}"></script>
 </body>
