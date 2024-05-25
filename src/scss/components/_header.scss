@@ -19,6 +19,17 @@
   @include media('<=767px') {
     &::before {
       height: 421px;
+      z-index: 1;
+    }
+
+    &::after {
+      width: 100%;
+      height: 700px;
+      background-color: #E3EAF2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
     }
   }
 }
@@ -57,8 +68,8 @@
     &::before {
       width: 100%;
       height: 489px;
-      left: 0;
-      top: 101px;
+      right: -20px;
+      top: 116px;
       background-image: url(../assets/img/media/header-bg-mob.png);
     }
   }
@@ -97,6 +108,11 @@
     font-size: 40px;
     margin-bottom: 64px;
   }
+
+  @include media('<=360px') {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
 }
 
 .header__subtitle {
@@ -110,6 +126,11 @@
     max-width: 174px;
     margin-bottom: 99px;
     line-height: 25px;
+  }
+
+  @include media('<=360px') {
+    max-width: 50%;
+    font-size: 16px;
   }
 }
 
