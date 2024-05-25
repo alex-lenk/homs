@@ -64,6 +64,10 @@
   background-color: var(--light-gray);
 }
 
+.d-none {
+  display: none !important;
+}
+
 .list-unstyled {
   padding-left: 0;
   margin-bottom: 0;

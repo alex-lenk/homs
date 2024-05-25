@@ -269,6 +269,10 @@ img {
   max-width: 100%;
 }
 
+svg {
+  pointer-events: none;
+}
+
 // Tables
 //
 // Prevent double borders

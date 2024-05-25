@@ -21,6 +21,7 @@
 @import 'components/contacts';
 @import 'components/c-modal';
 @import 'components/breadcrumb';
+@import 'components/go-top';
 @import 'components/difficulties';
 @import 'components/issues';
 @import 'components/solution';
@@ -33,6 +34,7 @@
 
 // Pages
 @import 'components/services';
+@import 'components/base';
 
 #root {
   padding-top: 90px;

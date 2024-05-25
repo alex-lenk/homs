@@ -9,7 +9,7 @@
   left: 17px;
   z-index: 3;
   overflow: hidden;
-  color: #5c5c5c;
+  color: var(--primary);
   font-size: 16px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -23,20 +23,20 @@
   align-items: center;
   width: 100%;
   padding: 0.375rem 16px;
-  color: #181818;
+  color: var(--primary);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   text-overflow: ellipsis;
-  background-color: #fff;
+  background-color: #E4EBF4;
   background-clip: padding-box;
-  border: 2px solid #cbcbcb;
+  border: 1px solid transparent;
   border-radius: 5px;
   transition: border-color .2s ease-in-out;
   appearance: none;
 
   @include hidePlaceholder {
-    color: #5c5c5c;
+    color: var(--primary);
     opacity: 1;
     transition: opacity .2s ease-in-out;
   }
@@ -66,7 +66,7 @@
       right: 1px;
       font-weight: 700;
       font-size: 12px;
-      background-color: #f8f8f8;
+      background-color: #E4EBF4;
     }
   }
 
@@ -84,20 +84,6 @@
     border-color: var(--primary);
   }
 
-  &.is-error {
-    background-color: var(--red0);
-    border-color: var(--red5);
-
-    + .form__error {
-      position: static;
-      opacity: 1;
-    }
-  }
-
-  &.is-success {
-    background-color: var(--green0);
-    border-color: var(--green0);
-  }
 
   &::-webkit-date-and-time-value {
     height: 1.5em;
@@ -194,24 +180,4 @@ textarea.form__control {
     line-height: 16px;
     content: attr(data-textarea-count) '/' attr(data-textarea-limit);
   }
-}
-
-.form__error {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  color: var(--red5);
-  font-size: 12px;
-  line-height: 1;
-  opacity: 0;
-  transition: opacity .2s ease-in-out;
-  pointer-events: none;
-
-}
-
-.form__error-decor {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-  fill: var(--red5);
 }

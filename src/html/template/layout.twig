@@ -1,4 +1,4 @@
-{% set version = '1.4' %}
+{% set version = '1.5' %}
 {% set var = {
   'about': { 'url': '/#about', 'name': 'О HOMS' },
   'services': { 'url': '/services.html', 'name': 'УСЛУГИ' },
@@ -67,6 +67,10 @@
   <!-- Begin: Support -->
   {% include '../components/support.twig' %}
   <!-- Begin: Support -->
+
+  <div class="go-top js-go-top js-goto" data-goto="#header">
+    <svg class="go-top__arrow"><use href="/assets/img/icons.svg#triangle"></use></svg>
+  </div>
 </div>
 <script src="/js/main.scripts.js?ver={{ version }}"></script>
 </body>

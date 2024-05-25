@@ -1,0 +1,122 @@
+.base {
+  position: relative;
+  z-index: 5;
+}
+
+.base__wrap {
+  display: flex;
+}
+
+.base__nav {
+  width: 263px;
+  margin-right: 48px;
+  padding: 38px 35px;
+  border-radius: 5px;
+  flex-shrink: 0;
+  position: relative;
+  background-color: var(--white);
+  box-shadow: 0 4px 4px rgba(157, 157, 157, 0.25);
+}
+
+.base__nav-item {
+  font-size: 24px;
+  display: flex;
+  position: relative;
+
+  &:not(:last-of-type) {
+    margin-bottom: 55px;
+  }
+
+  &::before {
+    width: 12px;
+    height: 12px;
+    transform: rotate(-45deg);
+    border-bottom: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
+    position: absolute;
+    right: -16px;
+    top: 11px;
+    content: '';
+  }
+}
+
+.base__nav-decor {
+  width: 28px;
+  height: 27px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  fill: var(--primary);
+}
+
+.base__content {
+  padding: 25px;
+  border-radius: 5px;
+  flex-grow: 1;
+  background-color: var(--white);
+  box-shadow: 0 4px 4px rgba(157, 157, 157, 0.25);
+}
+
+.base__search {
+  margin-bottom: 34px;
+}
+
+.base__search-input {
+}
+
+.base__search-icon {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 50%;
+  right: 21px;
+  z-index: 4;
+  transform: translateY(-50%);
+}
+
+.base__result {
+  margin-left: -5%;
+  max-height: 50vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #ededed;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #E4EBF4;
+    border-radius: 16px;
+  }
+}
+
+.base__result-item {
+  margin-bottom: 50px;
+  width: 50%;
+  flex: 0 0 auto;
+  order: 1;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 17px;
+  line-height: 22px;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    color: var(--primary);
+  }
+}
+
+.base__result-item--ok {
+  color: var(--primary);
+  order: 0;
+}
