@@ -10,10 +10,22 @@
         <div class="base__result">
           {% if resultList|length > 0 %}
             {% for instance in resultList %}
-              <a class="base__result-item js-base__result-item fw-bold text-black" href="#">{{ instance.text }}</a>
+              {% if instance.video %}
+                <a
+                  class="base__result-item js-base__result-item fw-bold text-black"
+                  href="#"
+                  data-fancybox
+                  data-src="{{ instance.video }}"
+                >{{ instance.text }}</a>
+              {% else %}
+                <a
+                  class="base__result-item js-base__result-item fw-bold text-black"
+                  href="/article.html"
+                >{{ instance.text }}</a>
+              {% endif %}
             {% endfor %}
-            {% else %}
-              <div class="base__result-item fw-bold text-primary">Результатов не найдено</div>
+          {% else %}
+            <div class="base__result-item">Результатов не найдено</div>
           {% endif %}
         </div>
       </section>
