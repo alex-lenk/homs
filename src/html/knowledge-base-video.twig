@@ -1,0 +1,19 @@
+{% extends 'template/layoutBasePage.twig' %}
+
+{% set metaTitle = 'Видео - база знаний' %}
+{% set description = ' ' %}
+{% set title = 'Видео' %}
+{% set isActiveVideo = true %}
+{% set resultList = [
+  {text: 'KPI-быстрый способ понять как идут дела'},
+  {text: 'USALI_PL BY PFM'},
+  {text: 'Как искать инсайты?'},
+  {text: 'Что дает факторный анализ?'},
+  {text: 'Daily Revenue Report для сети гостиниц'},
+  {text: 'Выступление на саммите Power BI Russia 2021 – Как искать инсайты в финансовой отчетности'},
+] %}
+
+{% set breadcrumbs = [
+  {'name': 'База знаний', url: 'knowledge-base.html'},
+  {'name': title},
+] %}

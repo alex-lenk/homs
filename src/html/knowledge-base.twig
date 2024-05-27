@@ -1,61 +1,28 @@
-{% extends 'template/layout.twig' %}
+{% extends 'template/layoutBasePage.twig' %}
 
 {% set metaTitle = 'база знаний' %}
 {% set description = ' ' %}
 {% set title = 'база знаний' %}
+{% set resultList = [
+  {text: 'KPI-быстрый способ понять как идут дела'},
+  {text: 'USALI_BL by PFM'},
+  {text: 'Как искать инсайты?'},
+  {text: 'Что дает факторный анализ?'},
+  {text: 'International Business Communication Standards или как добиться последовательности в управленческой отчетности'},
+  {text: 'Зачем и как считать риск в бизнесе?'},
+  {text: 'KPI – БЫСТРЫЙ СПОСОБ ПОНЯТЬ КАК ИДУТ ДЕЛА'},
+  {text: 'USALI_PL BY PFM'},
+  {text: 'KPI-быстрый способ понять как идут дела'},
+  {text: 'USALI_BL by PFM'},
+  {text: 'DAILY REVENUE REPORT ДЛЯ СЕТИ ГОСТИНИЦ'},
+  {text: 'ВЫСТУПЛЕНИЕ НА САММИТЕ POWER BI RUSSIA 2021 – КАК ИСКАТЬ ИНСАЙТЫ В ФИНАНСОВОЙ ОТЧЕТНОСТИ'},
+  {text: 'International Business Communication Standards или как добиться последовательности в управленческой отчетности'},
+  {text: 'Зачем и как считать риск в бизнесе?'},
+  {text: 'KPI – БЫСТРЫЙ СПОСОБ ПОНЯТЬ КАК ИДУТ ДЕЛА'},
+  {text: 'USALI_PL BY PFM'},
+  {text: 'KPI-быстрый способ понять как идут дела'},
+] %}
 
 {% set breadcrumbs = [
   {'name': title},
 ] %}
-
-{% block content %}
-  <div class="base">
-    <div class="base__wrap">
-      <nav class="base__nav">
-        <a href="#video" class="base__nav-item fw-extra-bold text-uppercase text-primary">видео</a>
-        <a href="#article" class="base__nav-item fw-extra-bold text-uppercase text-primary">статьи</a>
-        <a href="#special" class="base__nav-item fw-extra-bold text-uppercase text-primary">специальные отчеты</a>
-
-        <svg class="base__nav-decor">
-          <use href="/assets/img/icons.svg#triangle"></use>
-        </svg>
-      </nav>
-
-      <section class="base__content">
-        <div class="base__search form__group">
-          <input
-            type="search"
-            name="search"
-            class="base__search-input js-base__search-input form__control"
-            aria-label="search"
-            placeholder="Поиск"
-          >
-          <label class="form__label">Имя*</label>
-          <svg class="base__search-icon">
-            <use href="/assets/img/icons.svg#search"></use>
-          </svg>
-        </div>
-
-        {% set resultList = [
-          {text: 'KPI-быстрый способ понять как идут дела'},
-          {text: 'USALI_BL by PFM'},
-          {text: 'Как искать инсайты?'},
-          {text: 'Что дает факторный анализ?'},
-          {text: 'International Business Communication Standards или как добиться последовательности в управленческой отчетности'},
-          {text: 'Зачем и как считать риск в бизнесе?'},
-          {text: 'KPI – БЫСТРЫЙ СПОСОБ ПОНЯТЬ КАК ИДУТ ДЕЛА'},
-          {text: 'USALI_PL BY PFM'},
-          {text: 'KPI-быстрый способ понять как идут дела'},
-          {text: 'USALI_BL by PFM'},
-          {text: 'DAILY REVENUE REPORT ДЛЯ СЕТИ ГОСТИНИЦ'},
-          {text: 'ВЫСТУПЛЕНИЕ НА САММИТЕ POWER BI RUSSIA 2021 – КАК ИСКАТЬ ИНСАЙТЫ В ФИНАНСОВОЙ ОТЧЕТНОСТИ'},
-        ] %}
-        <div class="base__result">
-          {% for instance in resultList %}
-            <a class="base__result-item js-base__result-item fw-bold text-black" href="#">{{ instance.text }}</a>
-          {% endfor %}
-        </div>
-      </section>
-    </div>
-  </div>
-{% endblock %}

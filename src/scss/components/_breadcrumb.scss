@@ -6,10 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   line-height: 1;
-
-  @include media('<=767px') {
-    max-width: 70%;
-  }
 }
 
 .breadcrumb__item {

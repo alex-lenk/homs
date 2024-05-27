@@ -1,8 +1,8 @@
-{% set version = '1.5' %}
+{% set version = '1.7' %}
 {% set var = {
   'about': { 'url': '/#about', 'name': 'О HOMS' },
   'services': { 'url': '/services.html', 'name': 'УСЛУГИ' },
-  'base': { 'url': '/knowledge-base.html', 'name': 'БАЗА ЗНАНИЙ' },
+  'base': { 'url': '/knowledge-base.html', 'name': 'База знаний' },
   'contacts': { 'url': '/#contacts', 'name': 'КОНТАКТЫ' },
   'lk': { 'url': 'https://usali.pro', 'name': 'ЛИЧНЫЙ КАБИНЕТ' },
 } %}
@@ -68,7 +68,7 @@
   {% include '../components/support.twig' %}
   <!-- Begin: Support -->
 
-  <div class="go-top js-go-top js-goto" data-goto="#header">
+  <div class="go-top js-go-top js-goto d-none" data-goto="#header">
     <svg class="go-top__arrow"><use href="/assets/img/icons.svg#triangle"></use></svg>
   </div>
 </div>
