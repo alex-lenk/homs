@@ -1,4 +1,4 @@
-{% set version = '1.7' %}
+{% set version = '1.8' %}
 {% set var = {
   'about': { 'url': '/#about', 'name': 'О HOMS' },
   'services': { 'url': '/services.html', 'name': 'УСЛУГИ' },
@@ -45,7 +45,7 @@
 {% endblock %}
 
 <!-- Begin: container -->
-<main class="{{ mainClass|default('container') }}">
+<main class="{{ mainClass|default('main container') }}">
   {% block content %}{% endblock %}
 </main>
 <!-- End: container -->
