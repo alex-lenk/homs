@@ -1,0 +1,115 @@
+.issues {
+  @include media('>=768px') {
+    margin-bottom: 49px;
+  }
+
+  @include media('<=767px') {
+    margin-bottom: 91px;
+  }
+}
+
+.issues__heading {
+  @include media('>=1100px') {
+    margin-bottom: 63px;
+  }
+
+  @include media('<=1099px') {
+    margin-bottom: 46px;
+  }
+}
+
+.issues__heading-title {
+  @include media('>=1100px') {
+    margin-bottom: 0;
+  }
+
+  @include media('<=1099px') {
+    margin-bottom: 8px;
+  }
+}
+
+.issues__heading-text {
+  max-width: 970px;
+}
+
+.issues__list {
+  @include media('>=1100px') {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+}
+
+.issues__item {
+  @include media('>=1100px') {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 36px;
+    width: 50%;
+    flex: 0 0 auto;
+  }
+
+  @include media('<=1099px') {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+.issues__item-decor {
+  width: 99px;
+  height: 99px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  border-radius: 50%;
+  background-color: var(--primaryDark);
+  display: flex;
+
+  @include media('>=1100px') {
+    margin-right: 32px;
+  }
+
+  @include media('<=1099px') {
+    margin-right: 18px;
+  }
+}
+
+.issues__item-icon {
+  width: 53px;
+  height: 53px;
+  margin: auto;
+}
+
+.issues__item-wrap {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.issues__item-title {
+  flex-grow: 1;
+
+  @include media('>=1100px') {
+    padding-top: 24px;
+    font-size: 24px;
+  }
+
+  @include media('<=1099px') {
+    font-size: 22px;
+    align-self: center;
+  }
+}
+
+.issues__item-content {
+  font-size: 17px;
+  line-height: 22px;
+
+  @include media('>=1100px') {
+    padding-left: 130px;
+    margin-top: -41px;
+  }
+
+  @include media('<=1099px') {
+    padding-left: 10px;
+  }
+}

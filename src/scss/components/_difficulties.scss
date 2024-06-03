@@ -1,0 +1,79 @@
+.difficulties {
+  @include media('>=1100px') {
+    margin-bottom: 80px;
+  }
+
+  @include media('<=1099px') {
+    margin-bottom: 42px;
+  }
+}
+
+.difficulties__heading {
+  @include media('>=768px') {
+    margin-bottom: 16px;
+  }
+
+  @include media('<=767px') {
+    margin-bottom: 39px;
+  }
+}
+
+.difficulties__heading-title {
+  @include media('>=768px') {
+    margin-bottom: 6px;
+  }
+
+  @include media('<=767px') {
+    margin-bottom: 16px;
+  }
+}
+
+.difficulties__container {
+  @include media('>=768px') {
+    padding: 40px 40px 0;
+  }
+
+  @include media('>=1100px') {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include media('<=767px') {
+    padding: 25px 20px;
+  }
+}
+
+.difficulties__box {
+  font-size: 17px;
+
+  @include media('>=1100px') {
+    width: 460px;
+    flex: 0 0 auto;
+  }
+}
+
+.difficulties__bottom {
+  @include media('>=768px') {
+    width: 100%;
+    text-align: right;
+    transform: translateY(50%);
+  }
+
+  @include media('<=767px') {
+    margin-top: 40px;
+  }
+}
+
+.difficulties__bottom-btn {
+  height: 60px;
+  font-size: 18px;
+
+  @include media('>=768px') {
+    min-width: 460px;
+  }
+
+  @include media('<=767px') {
+    width: 100%;
+  }
+}

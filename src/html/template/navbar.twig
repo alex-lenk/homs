@@ -1,0 +1,34 @@
+<nav class="navbar">
+  <div class="navbar__container container">
+    <a href="/" class="navbar__logo">
+      <img src="/assets/img/logo/logo.svg" alt="">
+    </a>
+
+    <div class="navbar__panel js-navbar__panel">
+      <div class="navbar__panel-title text-uppercase font-family-tinos fw-bold section-decor">Меню</div>
+
+      <ul class="navbar__menu text-uppercase list-unstyled">
+        <li class="navbar__menu-item">
+          <a href="{{ var.about.url }}" class="navbar__menu-link">{{ var.about.name }}</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a href="{{ var.services.url }}" class="navbar__menu-link">{{ var.services.name }}</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a href="{{ var.base.url }}" class="navbar__menu-link">{{ var.base.name }}</a>
+        </li>
+        <li class="navbar__menu-item">
+          <a href="{{ var.contacts.url }}" class="navbar__menu-link">{{ var.contacts.name }}</a>
+        </li>
+      </ul>
+
+      <a href="{{ var.lk.url }}" class="navbar__btn btn btn-primary text-uppercase fw-extra-bold" rel="nofollow" target="_blank">
+        {{ var.lk.name }}
+      </a>
+
+      <div class="navbar__close js-navbar__close"></div>
+    </div>
+
+    <div class="navbar__open js-navbar__open"></div>
+  </div>
+</nav>

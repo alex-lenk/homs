@@ -1,91 +1,48 @@
-@import "general/mixin";
-@import "general/settings";
-@import "general/fonts";
-@import "general/settings";
-@import "lib/bootstrap";
-//@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
-@import "general/common";
-@import "components/scrollToTop";
-@import "components/header";
-@import "components/menu";
-@import "components/about";
-@import "components/advantages";
-@import "components/compare";
-@import "components/use-cases";
-@import "components/faq";
-@import "components/footer";
+// import Swiper and modules styles
+@import '../../node_modules/swiper/swiper-bundle.min';
+@import '../../node_modules/@fancyapps/ui/dist/fancybox/fancybox';
 
-.compare-label__title {
-  font-weight: 700;
+@import 'tools/variables';
+@import 'tools/mixin';
+@import 'tools/media';
+@import 'tools/keyframes';
+
+@import 'base/fonts';
+@import 'base/reboot';
+@import 'base/typography';
+@import 'base';
+@import 'base/btn';
+@import 'base/utilities';
+@import 'base/form-control';
+
+@import 'components/section';
+@import 'components/navbar';
+@import 'components/header';
+@import 'components/contacts';
+@import 'components/c-modal';
+@import 'components/breadcrumb';
+@import 'components/go-top';
+@import 'components/difficulties';
+@import 'components/issues';
+@import 'components/solution';
+@import 'components/integration';
+@import 'components/reports';
+@import 'components/created';
+@import 'components/main-video';
+@import 'components/main-info';
+@import 'components/footer';
+
+// Pages
+@import 'components/services';
+@import 'components/base';
+
+#root {
+  padding-top: 90px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-@media (min-width: 1200px) {
-  .work-section {
-    padding-top: 29px;
-  }
-  .work-inner {
-    padding: 0 35px 0 50px;
-  }
-  .work-title {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 767px) {
-  .work-section {
-    justify-content: center;
-  }
-  .work-decor__next {
-    display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  .work-section {
-    padding-top: 60px;
-  }
-  .work-inner {
-    padding: 0 15px 0;
-  }
-  .work-title {
-    font-size: 26px;
-  }
-}
-
-.work-inner {
-  min-height: 424px;
+.main {
   position: relative;
-  border: 1px solid #e1e1e1;
-}
-
-.work-decor {
-  width: 131px;
-  height: 128px;
-  margin: -64px auto 54px;
-  background-color: #1f50a4;
-  display: flex;
-}
-
-.work-decor__icon {
-  width: 62px;
-  height: 62px;
-  margin: auto;
-  fill: #fff;
-}
-
-.work-decor__next {
-  width: 40px;
-  height: 36px;
-  position: absolute;
-  top: -50px;
-  right: -40px;
-}
-
-.work-title {
-  padding-left: 5px;
-  margin-bottom: 12px;
-}
-
-.work-list {
-  line-height: 29px;
+  z-index: 6;
 }

@@ -1,0 +1,26 @@
+{% extends 'template/layoutBasePage.twig' %}
+
+{% set metaTitle = 'база знаний' %}
+{% set title = 'база знаний' %}
+
+{% set resultListArticle = [
+  {text: 'International Business Communication Standards или как добиться последовательности в управленческой отчетности'},
+  {text: 'Зачем и как считать риск в бизнесе?'},
+] %}
+
+{% set resultListVideo = [
+  {text: 'KPI-быстрый способ понять как идут дела', video: 'https://www.youtube.com/watch?v=sMiYKlzlrUU'},
+  {text: 'USALI_PL BY PFM', video: 'https://www.youtube.com/watch?v=q5NoN3cwyog'},
+  {text: 'Как искать инсайты?', video: 'https://www.youtube.com/watch?v=mn2ZB0qimko'},
+  {text: 'Что дает факторный анализ?', video: 'https://www.youtube.com/watch?v=QQCVlYEu6pc'},
+  {text: 'Daily Revenue Report для сети гостиниц', video: 'https://www.youtube.com/watch?v=K0VwxKYs0fc'},
+  {text: 'Выступление на саммите Power BI Russia 2021 – Как искать инсайты в финансовой отчетности', video: 'https://www.youtube.com/watch?v=qpm89xSasFc'},
+] %}
+
+{% set resultListSpecial = [] %}
+
+{% set resultList = resultListArticle|merge(resultListVideo)|merge(resultListSpecial) %}
+
+{% set breadcrumbs = [
+  {'name': title},
+] %}

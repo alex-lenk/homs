@@ -1,0 +1,25 @@
+.go-top {
+  @include media('<=799px') {
+    display: none;
+  }
+
+  @include media('>=800px') {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: flex;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 25;
+  }
+
+  .go-top__arrow {
+    width: 35px;
+    height: 35px;
+    margin: auto;
+    fill: var(--white);
+    transform: rotate(-135deg);
+  }
+}

@@ -1,0 +1,40 @@
+{% extends 'template/layout.twig' %}
+
+{% set metaTitle = 'Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице' %}
+{% set description = 'Homs - Программа, позволяющая автоматизировать управленческий учет в гостинице.' %}
+{% set title = 'homs' %}
+{% set isMainPage = true %}
+
+{% block content %}
+  <!-- Begin: difficulties -->
+  {% include 'home/difficulties.twig' %}
+  <!-- End: difficulties -->
+
+  <!-- Begin: issues -->
+  {% include 'home/issues.twig' %}
+  <!-- End: issues -->
+
+  <!-- Begin: solution -->
+  {% include 'home/solution.twig' %}
+  <!-- End: solution -->
+
+  <!-- Begin: integration -->
+  {% include 'home/integration.twig' %}
+  <!-- End: integration -->
+
+  <!-- Begin: reports -->
+  {% include 'home/reports.twig' %}
+  <!-- End: reports -->
+
+  <!-- Begin: created -->
+  {% include 'home/created.twig' %}
+  <!-- End: created -->
+
+  <!-- Begin: main-video -->
+  {% include 'home/main-video.twig' %}
+  <!-- End: main-video -->
+
+  <!-- Begin: main-info -->
+  {% include 'home/main-info.twig' %}
+  <!-- End: main-info -->
+{% endblock %}

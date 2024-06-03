@@ -1,0 +1,18 @@
+{% extends 'template/layoutBasePage.twig' %}
+
+{% set metaTitle = 'Видео - база знаний' %}
+{% set title = 'Видео' %}
+{% set isActiveVideo = true %}
+{% set resultList = [
+  {text: 'KPI-быстрый способ понять как идут дела', video: 'https://www.youtube.com/watch?v=sMiYKlzlrUU'},
+  {text: 'USALI_PL BY PFM', video: 'https://www.youtube.com/watch?v=q5NoN3cwyog'},
+  {text: 'Как искать инсайты?', video: 'https://www.youtube.com/watch?v=mn2ZB0qimko'},
+  {text: 'Что дает факторный анализ?', video: 'https://www.youtube.com/watch?v=QQCVlYEu6pc'},
+  {text: 'Daily Revenue Report для сети гостиниц', video: 'https://www.youtube.com/watch?v=K0VwxKYs0fc'},
+  {text: 'Выступление на саммите Power BI Russia 2021 – Как искать инсайты в финансовой отчетности', video: 'https://www.youtube.com/watch?v=qpm89xSasFc'},
+] %}
+
+{% set breadcrumbs = [
+  {'name': 'База знаний', url: 'knowledge-base.html'},
+  {'name': title},
+] %}

@@ -1,0 +1,33 @@
+<section class="main-info">
+  <h3 class="main-info__title text-uppercase">
+    homs разработан<br>
+    отельерами исключительно<br>
+    для отельеров.
+  </h3>
+
+  {% set mainInfoList = [
+    {icon: 'po', text: 'Все международные гостиничные компании используют для управленческого учета&nbsp;ПО, созданное только для отелей',},
+    {icon: 'implementation', text: 'Внедрение платформы, созданной для десятка отраслей больше не&nbsp;работает',},
+    {icon: 'indicators', text: 'Отельеры не&nbsp;должны рассказывать разработчику&nbsp;ПО о&nbsp;специфичных для гостиничной индустрии показателях',},
+  ] %}
+  <ul class="main-info__list list-unstyled">
+    {% for instance in mainInfoList %}
+      <li class="main-info__item">
+        <div class="main-info__item-decor">
+          <svg class="main-info__item-icon">
+            <use href="/assets/img/icons.svg#{{ instance.icon }}"></use>
+          </svg>
+        </div>
+        {{ instance.text }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="main-info__text fw-bold">
+    Мы&nbsp;внедрим метрики эффективные именно для вашего отеля
+  </div>
+
+  <div class="main-info__subtext fw-extra-bold text-uppercase text-primary">
+    потому что основа homs&nbsp;&mdash; двадцатилетний опыт работы команды в&nbsp;гостиничной индустрии
+  </div>
+</section>

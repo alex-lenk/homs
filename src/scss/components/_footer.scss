@@ -1,62 +1,90 @@
 .footer {
-  color: $white;
-  background-color: $primary;
-  line-height: 1;
-}
-
-.footer-inner {
+  padding-top: 28px;
+  padding-bottom: 28px;
   display: flex;
-  align-items: center;
+
+  @include media('<=767px') {
+    flex-wrap: wrap;
+  }
 }
 
-.footer-logo {
-  margin-right: auto;
+.footer__logo {
   flex-shrink: 0;
-  img {
-    display: block;
+
+  @include media('<=767px') {
+    width: 100%;
+    margin-bottom: 31px;
   }
 }
 
-.footer-contacts {
-  text-align: right;
+.footer__menu {
+  display: flex;
+  font-size: 20px;
+  line-height: 1;
+
+  @include media('>=768px') {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include media('<=767px') {
+    flex-wrap: wrap;
+  }
 }
 
-.footer-contacts__mail {
-  font-size: 18px;
+.footer__menu-item {
+  @include media('>=768px') {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @include media('<=767px') {
+    width: 50%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
 
-.footer-contacts__link {
+.footer__menu-link {
   color: inherit;
-  transition: color .3s;
 
-  &:hover {
-    color: #e2e2e2;
-  }
-}
+  @include media('>=1100px') {
+    position: relative;
+    display: block;
 
-@media (min-width: 768px) {
-  .footer {
-    padding-top: 76px;
-    padding-bottom: 76px;
-  }
-  .footer-logo {
-    width: 170px;
-  }
-}
+    &::before,
+    &::after {
+      width: 100%;
+      position: absolute;
+      max-width: 0;
+      z-index: 0;
+      transition: max-width .4s;
+      content: '';
+    }
 
-@media (max-width: 767px) {
-  .footer {
-    padding-top: 12vh;
-    padding-bottom: 12vh;
-  }
-  .footer-logo {
-    width: 32vw;
-  }
-  .footer-contacts__phone {
-    font-size: 5vw;
-  }
-  footer-logo
-  .footer-contacts__mail {
-    font-size: 4vw;
+    &::before {
+      top: -5px;
+      left: 0;
+      padding: 8px 0;
+      border-top: 1px solid var(--primary);
+    }
+
+    &::after {
+      bottom: -5px;
+      right: 0;
+      border-bottom: 1px solid var(--primary);
+    }
+
+    &:hover {
+      &::before {
+        max-width: 100%;
+      }
+
+      &::after {
+        max-width: 100%;
+      }
+    }
   }
 }

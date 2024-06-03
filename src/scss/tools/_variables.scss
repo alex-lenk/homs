@@ -1,0 +1,22 @@
+$white: #fff;
+$black: #000;
+$gray: #5F5F5F;
+$gray500: #F2F2F2;
+$light-gray: #fafafa;
+$primary: #2462BC;
+$primaryDark: #0154B2;
+
+$colors: (
+  'white': $white,
+  'black': $black,
+  'gray': $gray,
+  'gray500': $gray500,
+  'light-gray': $light-gray,
+  'primary': $primary,
+  'primaryDark': $primaryDark,
+);
+
+// font-variables
+$font-family-tinos: Tinos, -apple-system, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif: 'SourceSansPro', -apple-system, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: sfmono-regular, menlo, monaco, consolas, monospace;

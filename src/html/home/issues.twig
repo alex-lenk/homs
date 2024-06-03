@@ -1,0 +1,39 @@
+<section class="issues">
+  <div class="issues__heading section-decor">
+    <h2 class="issues__heading-title text-uppercase">проблемы с&nbsp;ms&nbsp;excel</h2>
+
+    <div class="issues__heading-text section-subtitle text-uppercase fw-bold text-gray">
+      отдельно затронем проблемы с&nbsp;ms&nbsp;excel, поскольку в&nbsp;большинстве случаев
+      объединение данных в&nbsp;единый отчет осуществляется в&nbsp;excel
+    </div>
+  </div>
+
+  {% set issuesList = [
+    {icon: 'data', title: 'большой объем данных', text: 'По&nbsp;мере роста бизнеса объем данных резко возрастает. Excel часто не&nbsp;справляется с&nbsp;большим объемом данных, замедляет работу или даже выходит из&nbsp;строя',},
+    {icon: 'cross', title: 'ошибки', text: 'Практически гарантировано наличие ошибок за&nbsp;счет ручной перебивки данных',},
+    {icon: 'fraud', title: 'мошенничество', text: 'Excel уязвим для мошенничества. В Excel можно изменить значение любой ячейки или формулы и таким образом подогнать результат под желаемый',},
+    {icon: 'uniform', title: 'нет единых данных', text: 'При использовании Excel отсутствует единое информационное поле. Иными словами, пользователи могут просматривать разные версии файла Excel и&nbsp;даже не&nbsp;знать об&nbsp;этом',},
+    {icon: 'unified', title: 'нет единой системы', text: 'Управленческий учет гостиницы в&nbsp;Excel часто создается людьми с&nbsp;небольшим опытом работы в&nbsp;IT или вообще без него. Файлы электронных таблиц со&nbsp;временем превращаются в&nbsp;сложную систему, разобраться в&nbsp;которой может только автор. Поэтому, когда приходит время новому сотруднику взять на&nbsp;себя ведение бюджета гостиницы, приходится начинать с&nbsp;самого начала',},
+    {icon: 'interactivity', title: 'отсутствие интерактивности', text: 'Отчеты в&nbsp;Excel не&nbsp;позволяют мгновенно менять разрез анализа, будь&nbsp;то выбор необходимого подразделения или отеля в&nbsp;гостиничной сети',},
+  ] %}
+  <ul class="issues__list list-unstyled">
+    {% for instance in issuesList %}
+      <li class="issues__item">
+        <div class="issues__item-wrap">
+          <div class="issues__item-decor">
+            <svg class="issues__item-icon">
+              <use href="/assets/img/icons.svg#{{ instance.icon }}"></use>
+            </svg>
+          </div>
+          <div class="issues__item-title text-uppercase text-primary fw-extra-bold">
+            {{ instance.title }}
+          </div>
+        </div>
+
+        <div class="issues__item-content">
+          {{ instance.text }}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

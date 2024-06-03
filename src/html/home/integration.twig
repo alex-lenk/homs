@@ -1,0 +1,21 @@
+<section class="integration">
+  <div class="integration__heading section-decor">
+    <h2 class="integration__heading-title text-uppercase">Быстрая и&nbsp;легкая интеграция</h2>
+
+    <div class="integration__heading-text section-subtitle text-uppercase fw-bold text-gray">
+      Мы&nbsp;умеем работать с&nbsp;большинством PMS, RMS и&nbsp;учетных систем
+      и&nbsp;легко объединяем данные в&nbsp;единую модель
+    </div>
+  </div>
+
+  {% set integrationList = [
+    {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {},
+  ] %}
+  <div class="integration__list">
+    {% for instance in integrationList %}
+      <div class="integration__item">
+        <img src="/assets/img/partners/logo-{{ loop.index }}.png" class="integration__item-img" alt="">
+      </div>
+    {% endfor %}
+  </div>
+</section>

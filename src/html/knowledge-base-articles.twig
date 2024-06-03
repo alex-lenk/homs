@@ -1,0 +1,15 @@
+{% extends 'template/layoutBasePage.twig' %}
+
+{% set metaTitle = 'Статьи - база знаний' %}
+{% set title = 'Статьи' %}
+{% set isActiveArticle = true %}
+
+{% set resultList = [
+  {text: 'International Business Communication Standards или как добиться последовательности в управленческой отчетности'},
+  {text: 'Зачем и как считать риск в бизнесе?'},
+] %}
+
+{% set breadcrumbs = [
+  {'name': 'База знаний', url: 'knowledge-base.html'},
+  {'name': title},
+] %}

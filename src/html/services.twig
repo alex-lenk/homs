@@ -1,0 +1,159 @@
+{% extends 'template/layout.twig' %}
+
+{% set metaTitle = 'Услуги' %}
+{% set title = 'Услуги' %}
+
+{% set breadcrumbs = [
+  {'name': title},
+] %}
+
+{% block content %}
+  <section class="services">
+    <article class="services__article">
+      <h3 class="services__article-title text-primary text-uppercase fw-extra-bold">
+        Ведение учета
+      </h3>
+
+      <div class="mb-3">
+        HOMS имеет команду специалистов с&nbsp;многолетним опытом ведения бухгалтерского и&nbsp;управленческого учета в&nbsp;отелях. Мы&nbsp;предоставляем не&nbsp;только софт, но&nbsp;и&nbsp;уникальную возможность передать нам такие рутинные мероприятия как оперативное закрытие месяца для целей управленческого учета
+        и&nbsp;формирование пакета отчетности. Вы&nbsp;же концентрируетесь на&nbsp;анализе и&nbsp;принятии решений, имея доступ к&nbsp;отчетам в&nbsp;режиме 24&nbsp;/ 7. Мы&nbsp;также можем подстраховать, когда у&nbsp;вас будут отпуска, нехватка персонала или просто понадобится финансист на&nbsp;месяц или два. Не&nbsp;позволяйте вашей команде увязнуть в&nbsp;утомительных, повторяющихся рутинных задачах. HOMS предоставит специалиста, специально обученного гостиничному управленческому учету, для поддержки вас и&nbsp;вашей команды
+      </div>
+
+      <div class="fw-bold mb-4">
+        При заказе услуги ведения управленческого учета&nbsp;Вы получаете
+      </div>
+
+      <div class="services__article-container">
+        <ul class="services__article-list list-dot">
+          <li>
+            Своевременное раннее закрытие периода
+          </li>
+          <li>
+            Детальный отчет в&nbsp;облаке, доступный 24&nbsp;/ 7
+          </li>
+          <li>
+            Свободное время для анализа результатов деятельности
+          </li>
+          <li>
+            Систематизацию подготовки годового бюджета
+          </li>
+          <li>
+            И&nbsp;все это без необходимости оплачивать HOMS, поскольку стоимость программы входит в&nbsp;ежемесячный пакет услуг
+          </li>
+        </ul>
+
+        <button
+          class="services__article-btn js-order-form btn btn-primary text-uppercase fw-bold"
+          data-target-modal="order-form"
+        >
+          получить консультацию
+        </button>
+      </div>
+
+      <svg class="services__article-decor">
+        <use href="/assets/img/icons.svg#triangle"></use>
+      </svg>
+    </article>
+
+    <article class="services__article">
+      <h3 class="services__article-title text-primary text-uppercase fw-extra-bold">
+        Обучение USALI
+      </h3>
+
+      <div class="mb-3">
+        Мы&nbsp;предлагаем курс, который позволит глубоко разобраться в&nbsp;системе управленческого
+        учета гостиницы или сети гостиниц.
+        Цель состоит в&nbsp;том, чтобы участники изучили практические аспекты USALI.
+      </div>
+
+      <div class="fw-bold mb-4">
+        По&nbsp;итогам курса слушатели получат
+      </div>
+
+      <ul class="list-dot">
+        <li>
+          Глубокое понимание системы управленческой отчетности в&nbsp;гостинице
+        </li>
+        <li>
+          Понимание конкретного механизма формирования орг структуры, нацеленной на&nbsp;генерацию
+          прибыли в&nbsp;гостинице
+        </li>
+        <li>
+          Понимание методов вычисления всех ключевых метрик как подразделений (Room Department,
+          FB&nbsp;Department, SPA Department),
+          так и&nbsp;гостиницы в&nbsp;целом
+        </li>
+        <li>
+          Знание о&nbsp;средних нормативах ключевых метрик в&nbsp;зависимости от&nbsp;звездности
+        </li>
+        <li>
+          Знания о&nbsp;методах сравнения показателей отеля с&nbsp;конкурентами (Benchmarking)
+        </li>
+        <li>
+          Методы бюджетирования и&nbsp;планирования, принятые в&nbsp;гостиничной индустрии
+        </li>
+        <li>
+          Конкретные знания о&nbsp;том, как анализировать и&nbsp;интерпретировать информацию в&nbsp;финансовой
+          отчетности гостиницы и&nbsp;принимать решения.
+          <br>
+          Акцент будет сделан на&nbsp;вертикальном анализе,
+          горизонтальном анализе, анализе безубыточности и&nbsp;факторном анализе
+        </li>
+        <li>
+          Понимание важности автоматизации управленческого учета в&nbsp;гостинице
+        </li>
+      </ul>
+
+      <div class="services__article-container">
+        <button
+          class="services__article-btn js-order-form btn btn-primary text-uppercase fw-bold"
+          data-target-modal="order-form"
+        >
+          получить консультацию
+        </button>
+      </div>
+
+      <svg class="services__article-decor">
+        <use href="/assets/img/icons.svg#triangle"></use>
+      </svg>
+    </article>
+
+    <article class="services__article">
+      <h3 class="services__article-title text-primary text-uppercase fw-extra-bold">
+        гостиничный консалтинг
+      </h3>
+
+      <div class="mb-3">
+        Планируете гостиничный проект? Необходима помощь при работе с&nbsp;банком-кредитором? Мы&nbsp;готовы помочь
+      </div>
+
+      <ul class="list-dot">
+        <li>
+          Подготовка маркетингового исследования для будущего гостиничного проекта
+        </li>
+        <li>
+          Разработка концепции
+        </li>
+        <li>
+          Вычисление размера инвестиционных затрат
+        </li>
+        <li>
+          Подготовка бизнес-плана и&nbsp;фин модели по&nbsp;требованиям банка-кредитора и&nbsp;Минэкономразвития
+        </li>
+      </ul>
+
+      <div class="services__article-container">
+        <button
+          class="services__article-btn js-order-form btn btn-primary text-uppercase fw-bold"
+          data-target-modal="order-form"
+        >
+          получить консультацию
+        </button>
+      </div>
+
+      <svg class="services__article-decor">
+        <use href="/assets/img/icons.svg#triangle"></use>
+      </svg>
+    </article>
+  </section>
+{% endblock %}

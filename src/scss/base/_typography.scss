@@ -1,0 +1,53 @@
+// Typography
+%heading {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+h1 {
+  @extend %heading;
+  font-size: 55px;
+  font-family: var(--font-family-tinos);
+}
+
+h2 {
+  @extend %heading;
+  font-size: 30px;
+  line-height: 34px;
+  font-family: var(--font-family-tinos);
+
+  @include media('>=768px') {
+    font-size: 35px;
+  }
+}
+
+h3 {
+  @extend %heading;
+  font-size: 30px;
+}
+
+h4 {
+  @extend %heading;
+  font-size: 22px;
+
+  @include media('>=768px') {
+      font-size: 26px;
+  }
+}
+
+h5 {
+  @extend %heading;
+  font-size: 20px;
+}
+
+h6 {
+  @extend %heading;
+  font-size: 16px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}

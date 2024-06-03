@@ -1,0 +1,45 @@
+<section class="reports">
+  <div class="reports__heading section-decor">
+    <h2 class="reports__heading-title text-uppercase">
+      автоматическое создание отчетов
+    </h2>
+
+    <div class="reports__heading-text section-subtitle text-uppercase fw-bold text-gray">
+      отслеживайте оперативно показатели отеля на&nbsp;любом устройстве.
+    </div>
+  </div>
+
+  <div class="reports__container">
+    <div class="reports__container-decor">
+      <img src="/assets/img/media/decor-smart-phone.png" alt="">
+    </div>
+
+    {% set reportsList = [
+      {}, {}, {}, {}, {},
+    ] %}
+    <div class="reports__slider js-reports__slider swiper">
+      <div class="reports__slider-wrap swiper-wrapper">
+        {% for instance in reportsList %}
+          <div class="reports__item swiper-slide">
+            <div data-fancybox="gallery" data-src="/assets/img/example/sliders/slide-{{ loop.index }}.jpg">
+              <img src="/assets/img/example/sliders/slide-{{ loop.index }}.jpg" class="reports__item-img" alt="">
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="reports__slider-control">
+        <div class="reports__slider-nav reports__slider-prev">
+          <svg class="reports__slider-nav-icon">
+            <use href="/assets/img/icons.svg#triangle"></use>
+          </svg>
+        </div>
+        <div class="reports__slider-nav reports__slider-next">
+          <svg class="reports__slider-nav-icon">
+            <use href="/assets/img/icons.svg#triangle"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
